@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImgUploadController;
 use App\Http\Controllers\NutritionDetectionController;
 use App\Http\Controllers\BarcodeNutritionDetectionController;
-
+use App\Http\Controllers\WorkoutController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -29,4 +29,6 @@ Route::get('get-yearly-nutrition', [NutritionDetectionController::class, 'getYea
 Route::get('detect-barcode-nutrition', [BarcodeNutritionDetectionController::class, 'detectBarcodeNutrition']);
 Route::post('save-nutrition-locally', [BarcodeNutritionDetectionController::class, 'saveProductNutritionLocally']);
 
-
+Route::get('workout/calories-today/{userId}', [WorkoutController::class, 'getCaloriesToday']);
+Route::get('workout/calories-this-week/{userId}', [WorkoutController::class, 'getCaloriesThisWeek']);
+Route::get('workout/recommended', [WorkoutController::class, 'getRecommendedWorkouts']);
