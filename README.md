@@ -14,22 +14,28 @@ Healtie didirikan untuk memenuhi kebutuhan darurat lokal dan global dalam SDGs P
 
 ![SignUpPage](https://i.ibb.co/PNSqf89/Sign-Up.png)
 
-* Job Offers Map
+* Home Page
 
 ![HomePages](https://i.ibb.co/R43kVZc/mobile-2.png)
 
-* Profile Page
+* QR scaner
 
 ![QRscaner](https://i.ibb.co/1bXPByY/mobile-3.png)
 
-* Jobs Page
+* Workout Plane
 
-![WorlPlane](https://i.ibb.co/XYzF7MK/Workout-Plan.png)
+![WorkoutPlane](https://i.ibb.co/XYzF7MK/Workout-Plan.png)
 
-* Learn Page
+* Healt Food
 
 ![HealtFood](https://i.ibb.co/ykxQDyS/Healthy-Food.png)
 
 
 ## Tim Kami
+### AMOEBA
+Out AMOEBERZ:
+- Maudy Wahyu as Hustler
+- Ferren Andrea as Hipster
+- Afrizal Rizqi as Hipster
+- Agustinus Pardamean Lumban Tobing as Hacker
 ![LearnPage](https://i.ibb.co/tQchxk1/Amoeba-Hustler-Stage-2.jpg)
