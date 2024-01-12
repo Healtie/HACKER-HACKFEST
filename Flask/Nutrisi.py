@@ -1,12 +1,48 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
 import requests
 import base64
 
 app = Flask(__name__)
 CORS(app)
 
+def train_and_recommend(dataset_path, input_calories):
+    # Membaca dataset
+    data = pd.read_csv(dataset_path)
+
+    # Pisahkan fitur (X) dan target (y)
+    X = data[['Kalori', 'Normal_Kalori']]
+    y = data['Rekomendasi_Olahraga']
+
+    # Membagi dataset menjadi data latih dan data uji
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # Membuat model RandomForestClassifier
+    model = RandomForestClassifier(n_estimators=100, random_state=42)
+
+    # Melatih model
+    model.fit(X_train, y_train)
+
+    # Memprediksi data uji
+    y_pred = model.predict(X_test)
+
+    # Mengukur akurasi model
+    accuracy = accuracy_score(y_test, y_pred)
+    print(f"Akurasi Model: {accuracy * 100:.2f}%")
+
+    # Fungsi untuk mendapatkan rekomendasi olahraga berdasarkan input kalori
+    def get_recommendation(calories):
+        input_data = pd.DataFrame({'Kalori': [calories], 'Normal_Kalori': [calories - 200]})
+        recommendation = model.predict(input_data)
+        return recommendation[0]
+
+    # Mendapatkan rekomendasi olahraga
+    recommended_sport = get_recommendation(input_calories)
+    return recommended_sport
 
 def barcodereadepoin():
     df = pd.read_csv('wd.csv')
@@ -16,11 +52,9 @@ def barcodereadepoin():
     df1['BARCODE'] = df1['BARCODE'].astype(str)
     return df1
 
-
 def findbarcode(dfl, barcode=''):
     df2 = dfl.loc[dfl['BARCODE'] == barcode]
     return df2
-
 
 def repoinforimgcal(api_key='2f154257cc40492d85643234db243009', poin='analyze', imgpoin='kosong'):
     url = f"https://api.spoonacular.com/food/images/{poin}"
@@ -39,7 +73,6 @@ def repoinforimgcal(api_key='2f154257cc40492d85643234db243009', poin='analyze', 
         rep = pd.DataFrame(
             {"error_message": f"Gagal mendapatkan respons. Kode status: {response.status_code}"}, index=[0])
     return rep
-
 
 def textmanureader(api_key='AIzaSyCsFHX5pWsLd2FT3Zq-hkp8b5k8RuZgyiA', image_url='https://i.ibb.co/TmjHfFq/image.png'):
     url = f'https://vision.googleapis.com/v1/images:annotate?key={api_key}'
@@ -82,14 +115,11 @@ def textmanureader(api_key='AIzaSyCsFHX5pWsLd2FT3Zq-hkp8b5k8RuZgyiA', image_url=
                       'Item1', 'Item2', 'Item3', 'Item4', 'Item5'])
     return df
 
-
 dfl = barcodereadepoin()
-
 
 @app.route('/get_data', methods=['GET'])
 def get_data():
     return dfl.to_json(orient='records')
-
 
 @app.route('/find_barcode', methods=['GET'])
 def get_barcode():
@@ -108,7 +138,7 @@ def get_barcode():
     if '-01' in newres.values():
         newres['tindakan'] = 'EDIT HIDUP SEHAT ITU PENTING!'
     else:
-        newres['tindakan'] = 'BROO HIDUP SEHAT ITU PENTING!'
+        newres['tindakan'] = 'HIDUP SEHAT ITU PENTING!'
 
     return jsonify(newres)
 
@@ -120,10 +150,6 @@ def classify_image():
     # Cek apakah uri tidak kosong dan berisi URL gambar
     if not uri.startswith(('http://', 'https://')):
         return jsonify({'error': 'Invalid image URL'}), 400
-
-    print('--------------')
-    print(uri)
-    print('--------------')
 
     # Panggil fungsi repoinforimgcal dengan uri sebagai parameter
     repwo = repoinforimgcal(imgpoin=uri)
@@ -138,12 +164,10 @@ def classify_image():
         'calories': repwo['calories.value'][0],
         'fat': repwo['fat.value'][0],
         'carbs': repwo['carbs.value'][0],
-        # Tambahkan data lainnya yang dianggap penting di sini
     }
 
     # Kembalikan data dalam format JSON
     return jsonify(important_data)
-
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80)
