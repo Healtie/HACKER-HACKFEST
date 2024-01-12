@@ -6,8 +6,30 @@ Healtie didirikan untuk memenuhi kebutuhan darurat lokal dan global dalam SDGs P
 
 
 ## Screenshots In-App
+* Login Page
 
-<!-- garis bawah -->
+![LoginPage](https://i.ibb.co/C6mKS9H/mobile-1.png)
+
+* Sign Up Page
+
+![SignUpPage](https://i.ibb.co/PNSqf89/Sign-Up.png)
+
+* Job Offers Map
+
+![HomePages](https://i.ibb.co/R43kVZc/mobile-2.png)
+
+* Profile Page
+
+![QRscaner](https://i.ibb.co/1bXPByY/mobile-3.png)
+
+* Jobs Page
+
+![WorlPlane](https://i.ibb.co/XYzF7MK/Workout-Plan.png)
+
+* Learn Page
+
+![HealtFood](https://i.ibb.co/ykxQDyS/Healthy-Food.png)
+
+
 ## Tim Kami
-<!-- gambar -->
 ![LearnPage](https://i.ibb.co/tQchxk1/Amoeba-Hustler-Stage-2.jpg)

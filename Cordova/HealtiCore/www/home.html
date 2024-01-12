@@ -34,10 +34,10 @@
                 <div class="top-navbar_full">
                     <div class="menu-btn d-flex align-items-center">
                         <a href="#offcanvasExample" data-bs-toggle="offcanvas"><img
-                                src="assets/images/profile-page/menu-icon.svg" alt="menu-icon"></a>
+                                src="assets/images/homepage2/setting-icon.svg" alt="menu-icon"></a>
                     </div>
                     <div class="brookwood-txt d-flex align-items-center">
-                        <p>Healtie</p>
+                        <p class="brookwood-txt">Healtie</p>
                     </div>
                     <div>
                         <ul class="homepage-cart-sec">
@@ -53,47 +53,157 @@
             <div class="navbar-boder"></div>
         </header>
         <!-- Header Section End -->
-        <!-- Notification Section Start -->
-        <section id="notification-page">
-            <div class="col-12 rounded" id="reader" style="height: 70vh; width: 100vw;"></div>
-            <div class="container">
-                <div class="container-fluid card">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h2 style="font-size: medium;">
-                                You can also input the nutrition manually
-                            </h2>
+        <!-- Homepage2 Details Section Start -->
+        <section id=homepage2-sec>
+            <div class="profile-top-sec">
+                <div class="profile-top-sec-full">
+                    <h1 class="d-none">Profile</h1>
+                    <h2 class="d-none">ProfilePage</h2>
+                    <div class="profile-img-sec">
+                        <img src="assets/images/profile-page/profile-1.png" alt="profile-img">
+                        <div class="gallay-icon">
+                            <a href="javascript:void(0)"><img src="assets/images/profile-page/gallary-icon.svg"
+                                    alt="gallary-icon"></a>
                         </div>
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <div class="col-12">
-                                        <iconify-icon icon="cryptocurrency-color:qrl" width="40"
-                                            height="40"></iconify-icon>
+                    </div>
+                    <div class="profile-details-sec">
+                        <h3 class="pro-txt1">Alisha Parker</h3>
+                        <a href="mailto:alishaparker@mail.com">
+                            <h4 class="pro-txt2">alishaparker@mail.com</h4>
+                        </a>
+                        <a href="tel:+012345678899">
+                            <h5 class="pro-txt3">+01 234 567 8899</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- barmenu -->
+            <div class="homepage2-second-sec mt-24">
+                <div class="container">
+                    <div class="product-details">
+                        <h1 class="d-none">Homepage</h1>
+                        <h2 class="d-none">Homepage Details</h2>
+                        <div class="product-sec">
+                            <div class="product-img-sec">
+                                <img src="assets/images/homepage2/sofas.svg" alt="furniture-img">
+                            </div>
+                            <h3 class="proct-title-hp-2">Nutrition Check</h3>
+                        </div>
+                        <div class="product-sec">
+                            <div class="product-img-sec">
+                                <img src="assets/images/homepage2/chairs.svg" alt="furniture-img">
+                            </div>
+                            <h3 class="proct-title-hp-2">Workout Plan</h3>
+                        </div>
+                        <div class="product-sec">
+                            <div class="product-img-sec">
+                                <img src="assets/images/homepage2/dining.svg" alt="furniture-img">
+                            </div>
+                            <h3 class="proct-title-hp-2">Healthy Food</h3>
+                        </div>
+                        <div class="product-sec">
+                            <div class="product-img-sec">
+                                <img src="assets/images/homepage2/storage.svg" alt="furniture-img">
+                            </div>
+                            <h3 class="proct-title-hp-2">Statistic
+                                Information</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="homepage2-third-sec mt-24">
+                <div class="container">
+
+                    <div class="prodcut-sec-slide">
+                        <div class="prodcut-sec-slide-full">
+                            <div class="row">
+                                <div class="col-12 row container-fluid">
+                                    <div class="col-7">
+                                        <h3 style="font-size: larger;">
+                                            Today's Nutrision
+                                        </h3>
                                     </div>
-                                    <div class="col-12">
-                                        <h4 style="font-size: medium;">Scan Food</h4>
+                                    <div class="col-2"></div>
+                                    <div class="col-3"><span><small>See All ></small></span></div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row text-center">
+                                        <div class="col-12">
+                                            <div id="chartcalory"></div>
+                                        </div>
+                                        <div class="col-12">
+                                            <strong>Kalori</strong>
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            <sup><small>150/100 KCAL</small></sup>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row text-center">
+                                        <div class="col-12">
+                                            <div id="chartSugar"></div>
+                                        </div>
+                                        <div class="col-12">
+                                            <strong>Sugar</strong>
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            <sup><small>150/100 KCAL</small></sup>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row text-center">
+                                        <div class="col-12">
+                                            <div id="chartFat"></div>
+                                        </div>
+                                        <div class="col-12">
+                                            <strong>FAT</strong>
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            <sup><small>150/100 KCAL</small></sup>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row text-center">
+                                        <div class="col-12">
+                                            <div id="chartNatrium"></div>
+                                        </div>
+                                        <div class="col-12">
+                                            <strong>Natrium</strong>
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            <sup><small>150/100 KCAL</small></sup>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-body text-center">
+                    </div>
+
+                    <div class="prodcut-sec-slide mt-3">
+                        <div class="prodcut-sec-slide-full">
+                            <div class="row">
+                                <div class="col-12 row container-fluid">
                                     <div class="col-12">
-                                        <iconify-icon icon="ion:barcode-outline" width="40" height="40"></iconify-icon>
+                                        <h3 style="font-size: larger;">
+                                            Calory Burn
+                                        </h3>
                                     </div>
-                                    <div class="col-12">
-                                        <h4 style="font-size: medium;">Scan Produk</h4>
-                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chartburn"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </section>
-        <!-- Bottom Navigation Start -->
+        <!-- Bottom Navigation Section End -->
         <div id="bottom-navigation">
             <div class="container">
                 <div class="home-navigation-menu">
@@ -187,184 +297,134 @@
                 </div>
             </div>
         </div>
-        <!-- Bottom Navigation End-->
+        <!-- Bottom Navigation Section End -->
     </div>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#poinUpdate" id="tombolmodal1">
 
-    </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="poinUpdate" tabindex="-1" aria-labelledby="poinupdate" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="poinupdate">Barang Mu Belum Di temukan</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h1>Hallo Tolong Bantu Untuk Mendatanya ya</h1>
-                    <form action="/addfood" method="post">
-                        <input type="text" class="form-control mt-1" value="Nama Produk" id="NamaProduk"
-                            name="NamaProduk" placeholder="NamaProduk">
-                        <input type="text" class="form-control mt-1" value="Kalori" id="fdKalorif" name="Kalori"
-                            placeholder="Kalori">
-                        <input type="text" class="form-control mt-1" value="Fat" id="fdFat" name="Fat"
-                            placeholder="Fat">
-                        <input type="text" class="form-control mt-1" value="Natrium" id="fdNatrium" name="Natrium"
-                            placeholder="Natrium">
-                        <input type="text" class="form-control mt-1" value="Sugar" id="fdSugar" name="Sugar"
-                            placeholder="Sugar">
-                        <input type="text" class="form-control mt-1" value="Barcode" id="fdBarcode" name="Barcode"
-                            placeholder="Barcode" readonly>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="assets/js/jquery-min-3.6.0.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.28.0/dist/apexcharts.min.css" />
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"
-        integrity="sha512-r6rDA7W6ZeQhvl8S7yRVQUKVHdexq+GAlNkNNqVC7YyIV+NwqCTJe2hDWCiffTyRNOeGEzRRJ9ifvRm/HCzGYg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script>
-        var kamerajalan = false;
-        var cekbagian = document.getElementById('reader__dashboard_section_csr').style.display
-        console.log(cekbagian)
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-                kamerajalan = true
-            })();
+        // Data presentasi
+        const presentasi = 1500;
+        const total = 2000;
 
-            // if cek bagian undivinded
-            // if (cekbagian == undefined) {
-            //     console.log('bagian undifined')
-            //     kamerajalan = false
-            // } else {
-            //     console.log('bagian tidak undifined')
-            //     kamerajalan = true
-            // }
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
+        // Hitung persentase
+        const percentage = (presentasi / total) * 100;
+
+        // Konfigurasi donut chart
+        const options = {
+            chart: {
+                type: 'donut',
+                height: 100
+            },
+            labels: ['Presentasi'],
+            series: [presentasi],
+            colors: ['#28a745'], // Warna hijau
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shade: 'dark',
+                    type: 'horizontal',
+                    shadeIntensity: 0.5,
+                    gradientToColors: ['#00bfff'],
+                    inverseColors: true,
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [0, 100]
+                },
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function (val) {
+                    return percentage.toFixed(2) + '%'; // Menampilkan persentase di dalam donut slice
+                }
+            },
+            legend: {
+                show: false, // Menyembunyikan legend
+            }
+        };
+        const chartcalory = new ApexCharts(document.querySelector("#chartcalory"), options);
+        const chartSugar = new ApexCharts(document.querySelector("#chartSugar"), options);
+        const chartFat = new ApexCharts(document.querySelector("#chartFat"), options);
+        const chartNatrium = new ApexCharts(document.querySelector("#chartNatrium"), options);
+        chartcalory.render();
+        chartSugar.render();
+        chartFat.render();
+        chartNatrium.render();
     </script>
 
     <script>
-        var panjangreader = document.getElementById("reader").offsetHeight;
-        var html5QrcodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 });
-
-        function factorpoin(barcode) {
-
-            //const url = `http://34.171.82.75/find_barcode?barcode=${barcode}`;
-            const url = `http://34.171.82.75/find_barcode?barcode=089686386110`;
-            // Lakukan fetch ke URL
-            return fetch(url)
-                .then(response => {
-                    // Periksa apakah responsenya sukses (status code 200 OK)
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! Status: ${response.status}`);
+        // Fungsi untuk membuat grafik area split
+        function createCaloriesChart(days, toBurn, burned) {
+            const options = {
+                chart: {
+                    type: 'area',
+                    stacked: true,
+                    height: 200
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'Kalori Dibakar',
+                    data: burned
+                }, {
+                    name: 'Kalori Harus Dibakar',
+                    data: toBurn
+                }],
+                xaxis: {
+                    categories: days,
+                },
+                yaxis: {
+                    labels: {
+                        show: false
                     }
-                    // Parse responsenya sebagai JSON
-                    return response.json();
-                })
-                .then(data => {
-                    // Ubah objek respons menjadi array
-                    const dataArray = Object.values(data);
-                    // Kembalikan array sebagai hasil
-                    applay(dataArray)
-                    return dataArray;
-                })
-                .catch(error => {
-                    console.error('Ada masalah dengan fetch:', error);
-                    // Jika terjadi kesalahan, kembalikan null atau nilai lain yang sesuai
-                    return null;
-                });
+                },
+                legend: {
+                    show: false,
+                    // position: 'top',
+                    // horizontalAlign: 'left'
+                },
+                tooltip: {
+                    enabled: false // Menyembunyikan tooltip
+                },
+                colors: ['#3498db', '#e74c3c'],
+                fill: {
+                    opacity: 0.5,
+                    type: 'gradient',
+                    gradient: {
+                        shade: 'dark',
+                        type: 'horizontal',
+                        shadeIntensity: 0.5,
+                        gradientToColors: ['#2980b9', '#c0392b'],
+                        inverseColors: true,
+                        opacityFrom: 1,
+                        opacityTo: 1,
+                        stops: [0, 100]
+                    },
+                },
+            };
+
+            // Inisialisasi grafik area split dengan menggunakan ApexCharts
+            const chart = new ApexCharts(document.querySelector("#chartburn"), options);
+            chart.render();
         }
 
-        // Contoh pemanggilan fungsi dengan barcode tertentu
-        function applay(params) {
-            html5QrcodeScanner.clear();
-            var bus = params[1] + params[2] + params[4] + params[5];
-            //bila terdapat string yang berisi -1
-            if (bus.includes("-01")) {
-                //save ke data pengguna
-                console.log("war")
-                document.getElementById('NamaProduk').value = params[3]
-                document.getElementById('tombolmodal1').click()
-            } else {
-                // open modal dengan js
-            }
-        }
+        // Dummy data kalori yang harus dibakar dan yang sudah terbakar
+        const caloriesToBurn = [300, 500, 600, 400, 700, 350, 450];
+        const burnedCalories = [100, 200, 300, 150, 250, 120, 180];
 
-        function onScanSuccess(decodedText, decodedResult) {
-            console.log(`Scan result: ${decodedText}`, decodedResult);
-            document.getElementById('codp').innerHTML = decodedText
-            document.getElementById('fdBarcode').value = decodedText
-            var wp = factorpoin(decodedText)
-            if (!isNaN(decodedText)) {
-            } else {
-                document.getElementById("barcodepoin").innerHTML = "invalid barcode";
-            }
-        }
+        // Hari dari Senin sampai Minggu
+        const daysOfWeek = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
 
-        function loadpoin() {
-            var p = html5QrcodeScanner.render(onScanSuccess);
-            console.log(html5QrcodeScanner)
-            console.log(p)
-            if (kamerajalan) {
-                setTimeout(() => {
-                    document.getElementById('reader__dashboard_section_csr').style.display = 'none'
-                }, 500);
-            } else {
-                // alert('Device Perlu meminta Izin Penggunaan Kamera')
-            }
-            setInterval(() => {
-                // document.getElementById('reader__dashboard').style.marginTop = "7rem";
-                // if (document.getElementById('reader__dashboard').innerHTML != "Request Camera Permissions") {
-                // document.getElementById('reader__dashboard').style.zIndex = "-1";
-                // }
-            }, 100);
-        }
-
-        loadpoin();
+        // Panggil fungsi untuk membuat grafik
+        createCaloriesChart(daysOfWeek, caloriesToBurn, burnedCalories);
     </script>
 </body>
 
