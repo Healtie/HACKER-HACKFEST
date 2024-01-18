@@ -2,7 +2,7 @@
 <widget id="hackfast.healtie.amoeba" version="1.0.0" xmlns="http://www.w3.org/ns/widgets"
     xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HEALTIE</name>
-    <description>=THIS APLICATION IS FOR HACKFAST AMOEBA</description>
+    <description>THIS APLICATION IS FOR HACKFAST AMOEBA</description>
     <author email="lagustinus211@gmail.com" href="https://lgarin211.github.io">
         lagustinus211@gmail.com
     </author>
