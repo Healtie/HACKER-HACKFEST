@@ -1,0 +1,982 @@
+.button-app-setting {
+  position: relative;
+  width: 1.33rem;
+  height: 1.33rem;
+  min-height: 1.33rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.healtie3 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.33rem;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 1;
+}
+
+.healtie-text {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+
+.button-setting {
+  width: 12.94rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-base);
+  box-sizing: border-box;
+}
+
+.shape7 {
+  position: absolute;
+  margin: 0 !important;
+  width: 100%;
+  top: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 2.44rem;
+}
+
+.shape8 {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-gray-100);
+  height: 0.06rem;
+  opacity: 0.1;
+}
+
+.shape6 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0rem 0rem;
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+}
+
+.top-nav-bar2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--headings-h1-size);
+  color: var(--be);
+  font-family: var(--headings-h2);
+}
+
+.avatar-1-icon {
+  position: relative;
+  width: 3.94rem;
+  height: 3.94rem;
+  object-fit: cover;
+}
+
+.ferren-andrea {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.loss-weight {
+  position: relative;
+  font-size: var(--headings-h2-size);
+  z-index: 1;
+  margin-top: -4px;
+}
+
+.ferrens-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.weight-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-xl);
+  gap: 0.17rem;
+}
+
+.height-frame {
+  position: absolute;
+  margin: 0 !important;
+  top: -1.06rem;
+  left: 0.44rem;
+}
+
+.age {
+  position: relative;
+  z-index: 1;
+}
+
+.text-unitcm {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.shape-age {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-3xs) 0rem 0rem;
+}
+
+.sofas-chairs-storage-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-9xs);
+}
+
+.weightkg-frame {
+  height: 2.39rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-9xs) 0rem 0rem;
+  box-sizing: border-box;
+}
+
+.cm {
+  position: relative;
+}
+
+.work-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.boardheartregular-shape {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.kg {
+  position: absolute;
+  margin: 0 !important;
+  top: -1.33rem;
+  right: 0.22rem;
+}
+
+.shape-icon {
+  position: relative;
+  width: 20.89rem;
+  height: 10.78rem;
+  object-fit: contain;
+  display: none;
+  max-width: 100%;
+}
+
+.shape-child {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: var(--br-18xl) var(--br-18xl) var(--br-9xs) var(--br-9xs);
+  background-color: var(--color-whitesmoke-100);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.nutrition {
+  margin: 0;
+}
+
+.nutrition-check {
+  position: absolute;
+  top: 3.94rem;
+  left: 0.61rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.ellipse-ellipse-ellipse {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 50%;
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.board-heart-20-regular-1-icon {
+  position: absolute;
+  top: 0.39rem;
+  left: 0.5rem;
+  width: 2.56rem;
+  height: 2.56rem;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.frame-frame-frame {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: calc(100% - 10px);
+  top: 0.28rem;
+  right: 0.28rem;
+  left: 0.28rem;
+  height: 3.56rem;
+}
+
+.shape9 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: var(--br-18xl) var(--br-18xl) var(--br-9xs) var(--br-9xs);
+  background-color: var(--color-whitesmoke-100);
+  width: 100%;
+  height: 100%;
+}
+
+.sofas {
+  flex: 1;
+  position: relative;
+  height: 5.94rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.workout-plan {
+  position: absolute;
+  top: 3.94rem;
+  left: 0.67rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.dining-icon {
+  position: absolute;
+  margin: 0 !important;
+  height: 100%;
+  width: 100%;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.food-apple-20-regular-1-icon {
+  position: relative;
+  width: 2.56rem;
+  height: 2.56rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.healthy-food {
+  position: relative;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.healthy-food-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-2xs) 0rem var(--padding-5xs);
+}
+
+.storage-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-7xs) var(--padding-7xs);
+  position: relative;
+  gap: var(--gap-smi);
+}
+
+.statistic-information {
+  position: absolute;
+  top: 3.94rem;
+  left: 0.11rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.chart-line-up-1-icon {
+  position: absolute;
+  top: 0.39rem;
+  left: 0.44rem;
+  width: 2.56rem;
+  height: 2.56rem;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.progress-cards-frame {
+  margin: 0 !important;
+  position: absolute;
+  bottom: -9.78rem;
+  left: -15.94rem;
+  /* background: linear-gradient(180deg, #0076be, rgba(150, 202, 255, 0)); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 20.89rem;
+  height: 10.78rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-20xl) var(--padding-lgi) var(--padding-20xl) var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-mini);
+  font-size: var(--caption-regular-size);
+  font-family: var(--headings-biggest);
+}
+
+.nutrition-check-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+
+.sofas-chairs-frame {
+  width: 20.06rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-7xl) 0rem var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--headings-h2-size);
+}
+
+.f-r-a-m-e-a {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.28rem;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--headings-h1-size);
+  color: var(--color);
+  font-family: var(--headings-h2);
+}
+
+.progress-cards-child {
+  position: relative;
+  border-radius: var(--br-2xs);
+  background-color: var(--color-whitesmoke-100);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 20.11rem;
+  height: 9.72rem;
+  display: none;
+  max-width: 100%;
+}
+
+.see-all1 {
+  position: relative;
+  line-height: 1.33rem;
+  font-weight: 500;
+}
+
+.icon {
+  position: relative;
+  width: 1.33rem;
+  height: 1.33rem;
+  min-height: 1.33rem;
+}
+
+.icon-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: right;
+  font-size: var(--headings-h2-size);
+}
+
+.featured-items1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.progress-cards {
+  align-self: stretch;
+  border-radius: var(--br-2xs);
+  background-color: var(--color-whitesmoke-100);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-xs) var(--padding-3xs) 7.39rem var(--padding-4xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.frame-child5 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--bg-2);
+}
+
+.frame-child6 {
+  position: absolute;
+  margin: 0 !important;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 50%;
+  background-color: var(--bf91);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.ellipse-container {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.div1 {
+  position: absolute;
+  margin: 0 !important;
+  top: 1.06rem;
+  left: 1.58rem;
+  line-height: 150%;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.progress {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-sm) 0rem var(--padding-smi);
+  position: relative;
+}
+
+.chest-workout {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+
+.min-remaining {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--caption-regular-size);
+  line-height: 130%;
+  color: var(--bf91);
+}
+
+.text {
+  width: 6.28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+
+.text-wrapper {
+  width: 5.56rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+}
+
+.progress-card-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--black);
+  /* 
+  align-self: stretch;
+  border-radius: var(--br-2xs);
+  background-color: var(--color-whitesmoke-100);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-xs) var(--padding-3xs) 7.39rem var(--padding-4xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  */
+}
+
+.icons-more {
+  position: absolute;
+  margin: 0 !important;
+  top: 0.44rem;
+  left: 6.22rem;
+  width: 1.33rem;
+  height: 1.33rem;
+  object-fit: cover;
+  display: none;
+  z-index: 2;
+}
+
+.progress-card {
+  flex: 1;
+  border-radius: var(--br-base);
+  height: 8.33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0rem var(--padding-4xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-5xs);
+
+}
+
+.frame-child8 {
+  position: absolute;
+  margin: 0 !important;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 50%;
+  background-color: var(--bf4848);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.div2 {
+  position: absolute;
+  margin: 0 !important;
+  top: 1.06rem;
+  left: 1.42rem;
+  line-height: 150%;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.min-remaining1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--caption-regular-size);
+  line-height: 130%;
+  color: var(--bf4848);
+}
+
+.text-container {
+  width: 5.61rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+}
+
+.progress-card-child {
+  width: 4.94rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+  color: var(--black);
+}
+
+.progress-card1 {
+  align-self: stretch;
+  border-radius: var(--br-base);
+  width: 4.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0rem 3.06rem;
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-5xs);
+  color: var(--bf4848);
+}
+
+.frame-child13 {
+  position: relative;
+  border-radius: var(--br-2xs);
+  background-color: var(--color-whitesmoke-100);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 20.11rem;
+  height: 11.22rem;
+  display: none;
+  max-width: 100%;
+}
+
+.chart-icon {
+  position: absolute;
+  top: 1.28rem;
+  left: 0rem;
+  width: 19.22rem;
+  height: 7.62rem;
+  z-index: 3;
+}
+
+.calories-burn {
+  margin: 0;
+  position: absolute;
+  top: 0rem;
+  left: 0.22rem;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  z-index: 4;
+}
+
+.chart-parent {
+  align-self: stretch;
+  position: relative;
+  height: 9.89rem;
+}
+
+.mon {
+  flex: 1;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: left;
+  display: inline-block;
+  min-width: 1rem;
+  z-index: 3;
+}
+
+.tue {
+  flex: 1;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 1rem;
+  z-index: 3;
+}
+
+.fri {
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: 500;
+  z-index: 3;
+}
+
+.sun {
+  flex: 1;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: right;
+  display: inline-block;
+  min-width: 1rem;
+  z-index: 3;
+}
+
+.mon-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0rem var(--padding-5xs) 0rem var(--padding-6xs);
+  gap: var(--gap-xl);
+  text-align: center;
+  font-size: var(--caption-regular-size);
+  color: var(--color-darkslategray);
+}
+
+.rectangle-parent2 {
+  margin: 0 !important;
+  position: absolute;
+  bottom: -10.11rem;
+  left: 0.4rem;
+  border-radius: var(--br-2xs);
+  background-color: var(--color-whitesmoke-100);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 20.11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-6xs) var(--padding-2xs) var(--padding-2xs) var(--padding-8xs);
+  box-sizing: border-box;
+  gap: var(--gap-7xs);
+  z-index: 2;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color);
+  font-family: var(--headings-h2);
+}
+
+.progress-cards1 {
+  width: 100vw;
+  height: 10.11rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-10xs) 0rem 0rem;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+  margin-top: -143px;
+  text-align: center;
+  font-size: var(--body-2-bold-size);
+  color: var(--bf91);
+  font-family: var(--body-2-bold);
+}
+
+.featured-items {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-7xs) 0rem var(--padding-6xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color);
+  font-family: var(--headings-h2);
+}
+
+.line-container {
+  position: absolute;
+  margin: 0 !important;
+  top: 12.28rem;
+  left: 4.72rem;
+  border-right: 1px solid var(--color);
+  box-sizing: border-box;
+  width: 0.06rem;
+  height: 2.72rem;
+  z-index: 1;
+}
+
+.line-container1 {
+  position: absolute;
+  margin: 0 !important;
+  top: 12.28rem;
+  left: 9.11rem;
+  border-right: 1px solid var(--color);
+  box-sizing: border-box;
+  width: 0.06rem;
+  height: 2.72rem;
+  z-index: 1;
+}
+
+.line-container2 {
+  position: absolute;
+  margin: 0 !important;
+  top: 12.28rem;
+  right: 6.17rem;
+  border-right: 1px solid var(--color);
+  box-sizing: border-box;
+  width: 0.06rem;
+  height: 2.72rem;
+  z-index: 1;
+}
+
+.shape-icon1 {
+  position: absolute;
+  top: 1.56rem;
+  left: 0rem;
+  width: 100vw;
+  height: 3.11rem;
+  object-fit: cover;
+}
+
+.account-icon {
+  position: absolute;
+  top: 2.44rem;
+  left: 17.72rem;
+  width: 1.33rem;
+  height: 1.33rem;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.notification-icon {
+  position: absolute;
+  top: 2.44rem;
+  left: 13.72rem;
+  width: 1.33rem;
+  height: 1.33rem;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 0rem;
+  left: 8.89rem;
+  width: 3.11rem;
+  height: 3.11rem;
+  z-index: 1;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 2.44rem;
+  left: 5.78rem;
+  width: 1.33rem;
+  height: 1.33rem;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.notification-icon1 {
+  position: absolute;
+  top: 3.78rem;
+  left: 2.22rem;
+  border-radius: 50%;
+  background-color: var(--color-deepskyblue);
+  width: 0.44rem;
+  height: 0.44rem;
+  z-index: 1;
+}
+
+.icon1 {
+  position: absolute;
+  top: 2rem;
+  left: 1.78rem;
+  width: 1.33rem;
+  height: 1.33rem;
+  z-index: 1;
+}
+
+.account-nav {
+  flex: 1;
+  position: relative;
+  height: 4.67rem;
+  max-width: 100%;
+}
+
+.upc-scan-1-icon {
+  /* position: absolute;
+  left: -15.7vw;
+  width: auto;
+  top: 1.1rem;
+  left: -1.3rem; 
+  width: 2.56rem;
+  height: 1.56rem; */
+  overflow: hidden;
+  position: absolute;
+  left: -2.15rem;
+  width: auto;
+  top: 1.7rem;
+  overflow: hidden;
+}
+
+.icon2 {
+  position: absolute;
+  margin: 0 !important;
+  top: -1.56rem;
+  right: 9.61rem;
+  /* width: 1.56rem;
+  height: 3.67rem; */
+  cursor: pointer;
+  z-index: 3;
+}
+
+.bottom-nav-bar {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+.home-page {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0rem var(--padding-8xl);
+  box-sizing: border-box;
+  gap: 11.56rem;
+  letter-spacing: normal;
+}

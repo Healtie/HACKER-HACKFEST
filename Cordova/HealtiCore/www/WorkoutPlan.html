@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./WorkoutPlan.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap"
+    />
+  </head>
+  <body>
+ <!-- buatkan aku modal untuk menyampaikan pesan error -->
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="modal-title" class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div id="modal-body" class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" id="closeModal" class="btn btn-secondary" data-bs-dismiss="modal">oke</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+       function showModal(title, body) {
+        var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+        document.getElementById("modal-title").innerHTML = title;
+        document.getElementById("modal-body").innerHTML = body;
+        myModal.show();
+      }
+
+      var closeModal = document.getElementById("closeModal");
+      if (closeModal) {
+        closeModal.addEventListener("click", function (e) {
+          var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+          myModal.hide();
+        });
+      }
+    </script>
+    <!-- end of secment modal -->
+    <div class="workout-plan1">
+      <div class="top-bar-wrapper">
+        <img class="top-bar-icon3" alt="" src="./public/top-bar@2x.png" />
+      </div>
+      <div class="top-nav-bar-wrapper">
+        <div class="top-nav-bar4" id="topNavBar">
+          <div class="shape30">
+            <div class="shape-inner4">
+              <div class="frame-parent18">
+                <div class="frame-wrapper5" id="frameContainer">
+                  <img
+                    class="frame-child30"
+                    loading="eager"
+                    alt=""
+                    src="./public/frame-4273207793.svg"
+                  />
+                </div>
+                <b class="healtie9">Healtie</b>
+              </div>
+            </div>
+            <div class="shape31"></div>
+            <div class="shape32"></div>
+          </div>
+        </div>
+      </div>
+      <section class="workout-plan-inner">
+        <div class="frame-parent19">
+          <div class="workout-plan-wrapper">
+            <div class="workout-plan2">Workout Plan</div>
+          </div>
+          <div class="section" id="sectionContainer">
+            <button class="button5">
+              <div class="rectangle"></div>
+              <div class="details">Required</div>
+            </button>
+            <button class="button6">
+              <div class="rectangle1"></div>
+              <img class="lock-1-icon" alt="" src="./public/lock-1.svg" />
+
+              <div class="exercise">Additional</div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="workout-plan-child">
+        <div class="weight-lifting-parent">
+          <div class="weight-lifting">Weight Lifting</div>
+          <div class="category-card" id="categoryCardContainer">
+            <img
+              class="category-card-child"
+              loading="eager"
+              alt=""
+              src="./public/vector-01@2x.png"
+            />
+
+            <div class="text4">
+              <div class="full-body-warm1">Full Body Warm Up</div>
+              <div class="frame-parent20">
+                <div class="exercises-parent">
+                  <div class="exercises">20 Exercises</div>
+                  <div class="frame-child31"></div>
+                </div>
+                <div class="min">22 Min</div>
+              </div>
+            </div>
+            <img
+              class="icons-chevron-right"
+              loading="eager"
+              alt=""
+              src="./public/icons-chevron-right.svg"
+            />
+          </div>
+          <div class="category-card1">
+            <img
+              class="category-card-child"
+              loading="eager"
+              alt=""
+              src="./public/vector-02@2x.png"
+            />
+
+            <div class="text4">
+              <div class="full-body-warm1">Strength Exercise</div>
+              <div class="frame-parent20">
+                <div class="exercises-group">
+                  <div class="exercises">12 Exercises</div>
+                  <div class="frame-child31"></div>
+                </div>
+                <div class="min1">14 Min</div>
+              </div>
+            </div>
+            <img
+              class="icons-chevron-right"
+              loading="eager"
+              alt=""
+              src="./public/icons-chevron-right.svg"
+            />
+          </div>
+          <div class="category-card1">
+            <img
+              class="category-card-child"
+              loading="eager"
+              alt=""
+              src="./public/vector-03@2x.png"
+            />
+
+            <div class="text4">
+              <div class="full-body-warm1">Both Side Plank</div>
+              <div class="frame-parent22">
+                <div class="exercises-group">
+                  <div class="exercises2">15 Exercises</div>
+                  <div class="frame-child31"></div>
+                </div>
+                <div class="min1">18 Min</div>
+              </div>
+            </div>
+            <img
+              class="icons-chevron-right"
+              loading="eager"
+              alt=""
+              src="./public/icons-chevron-right.svg"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="workout-plan-inner1">
+        <div class="weight-lifting-parent">
+          <div class="abs-workout-parent">
+            <div class="abs-workout">Abs Workout</div>
+            <div class="see-all2">See All</div>
+          </div>
+          <div class="category-card1">
+            <img
+              class="category-card-child"
+              loading="eager"
+              alt=""
+              src="./public/vector-04@2x.png"
+            />
+
+            <div class="text4">
+              <div class="full-body-warm1">Abs Workout</div>
+              <div class="frame-parent22">
+                <div class="exercises-group">
+                  <div class="exercises2">16 Exercises</div>
+                  <div class="frame-child31"></div>
+                </div>
+                <div class="min1">18 Min</div>
+              </div>
+            </div>
+            <img
+              class="icons-chevron-right"
+              loading="eager"
+              alt=""
+              src="./public/icons-chevron-right.svg"
+            />
+          </div>
+          <div class="category-card1">
+            <img class="category-card-child" loading="eager" alt="" />
+
+            <div class="text4">
+              <div class="full-body-warm1">Torso Workout</div>
+              <div class="frame-parent22">
+                <div class="exercises-group">
+                  <div class="exercises2">8 Exercises</div>
+                  <div class="frame-child31"></div>
+                </div>
+                <div class="min1">10 Min</div>
+              </div>
+            </div>
+            <img
+              class="icons-chevron-right"
+              loading="eager"
+              alt=""
+              src="./public/icons-chevron-right.svg"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          window.location.href = "./HomePage.html";
+        });
+      }
+
+      var topNavBar = document.getElementById("topNavBar");
+      if (topNavBar) {
+        topNavBar.addEventListener("click", function (e) {
+          window.location.href = "./HomePage.html";
+        });
+      }
+
+      var sectionContainer = document.getElementById("sectionContainer");
+      if (sectionContainer) {
+        sectionContainer.addEventListener("click", function (e) {
+          window.location.href = "./WorkoutPlan1.html";
+        });
+      }
+
+      var categoryCardContainer = document.getElementById(
+        "categoryCardContainer",
+      );
+      if (categoryCardContainer) {
+        categoryCardContainer.addEventListener("click", function (e) {
+          window.location.href = "./WorkoutSession.html";
+        });
+      }
+    </script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./SignIn.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap"
+    />
+  </head>
+  <body>
+ <!-- buatkan aku modal untuk menyampaikan pesan error -->
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="modal-title" class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div id="modal-body" class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" id="closeModal" class="btn btn-secondary" data-bs-dismiss="modal">oke</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+       function showModal(title, body) {
+        var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+        document.getElementById("modal-title").innerHTML = title;
+        document.getElementById("modal-body").innerHTML = body;
+        myModal.show();
+      }
+
+      var closeModal = document.getElementById("closeModal");
+      if (closeModal) {
+        closeModal.addEventListener("click", function (e) {
+          var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+          myModal.hide();
+        });
+      }
+    </script>
+    <!-- end of secment modal -->
+    <div class="sign-in6">
+      <main class="sign-in7" id="">
+        <section class="frame-parent12">
+          <div class="welcome-to-healtie-parent">
+            <h1 class="welcome-to-healtie">Welcome To Healtie!</h1>
+            <div class="sign-in-to">Sign in to continue</div>
+          </div>
+          <div class="frame-parent13">
+            <div class="frame-parent14">
+              <div class="email-group">
+                <div class="remember-me">Email</div>
+                <input required
+                  class="yournamemailcom1" id="email"
+                  placeholder="yourname@mail.com"
+                  type="text" 
+                />
+              </div>
+              <div class="frame-child28"></div>
+            </div>
+            <div class="frame-parent15">
+              <div class="password-group">
+                <div class="remember-me">Password</div>
+                <input required class="div7" type="password" id="password" placeholder="********" style="border: none;">
+              </div>
+              <div class="frame-child28"></div>
+            </div>
+            <div class="frame-parent16">
+              <div class="icon-parent">
+                <img
+                  class="icon7"
+                  loading="eager"
+                  alt=""
+                  src="./public/icon11.svg"
+                />
+
+                <div class="remember-me">Remember Me</div>
+              </div>
+              <div class="forget-password">Forget password?</div>
+            </div>
+          </div>
+          <div class="frame-parent17">
+            <div class="button-sign-in-parent">
+              <button class="button-sign-in" id="signIn">
+                <div class="button-sign-in-child"></div>
+                <div class="sign-in8">Sign In</div>
+              </button>
+              <div class="or-sign-in">Or sign in with</div>
+            </div>
+            <img
+              class="sign-in-via-google"
+              loading="eager"
+              alt=""
+              src="./public/sign-in-via-google@2x.png"
+            />
+          </div>
+        </section>
+        <div class="dont-have-an-container" id="dontHaveAn">
+          <span>Don't have an account? </span>
+          <span class="sign-up2">Sign up</span>
+        </div>
+      </main>
+    </div>
+    <script>
+
+
+      function login() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        //Request ke http://127.0.0.1:5500/www/DemoAPi/responlogin.json
+        $.ajax({
+          url: "./DemoAPi/responlogin.json",
+          type: "GET",
+          dataType: "json",
+          success: function (data) {
+            console.log(data.acc);
+            if(data.acc){
+              localStorage.setItem("Userdata", JSON.stringify(data.data));
+              window.location.href = "./FilterPage.html";
+            }else{
+              showModal("Login Failed", "Email or Password is wrong");
+            }
+          },
+        });
+
+
+        // alert coba login
+        if (email == "admin@admin.com" && password == "admin") {
+          window.location.href = "./FilterPage.html";
+        } else {
+          showModal("Login Failed", "Email or Password is wrong");
+        }
+        
+      }
+
+    </script>
+    <script>
+      var dontHaveAn = document.getElementById("dontHaveAn");
+      if (dontHaveAn) {
+        dontHaveAn.addEventListener("click", function (e) {
+          window.location.href = "./SignUp.html";
+        });
+      }
+
+      var signIn = document.getElementById("signIn");
+      if (signIn) {
+        signIn.addEventListener("click", function (e) {
+          // window.location.href = "./FilterPage.html";
+          login();
+        });
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

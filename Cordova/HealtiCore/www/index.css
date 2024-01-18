@@ -1,0 +1,353 @@
+.top-bar-icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 2.44rem;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.frame-child {
+  position: relative;
+  border-radius: var(--br-81xl);
+  width: 2.33rem;
+  height: 2.33rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.healtie-inner {
+  box-shadow: 0px 0px 4.1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  z-index: 1;
+}
+.healtie1 {
+  position: relative;
+  line-height: 1.33rem;
+  z-index: 1;
+}
+.healtie {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.healtie-wrapper {
+  width: 12.72rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-xs);
+  box-sizing: border-box;
+}
+.shape1 {
+  position: absolute;
+  margin: 0 !important;
+  width: 100%;
+  top: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 3.21rem;
+}
+.shape2 {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-gray-100);
+  height: 0.07rem;
+  opacity: 0.1;
+}
+.shape {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0rem var(--padding-12xs);
+  position: relative;
+  gap: var(--gap-12xs);
+}
+.top-nav-bar {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--headings-h1-size);
+  color: var(--be);
+  font-family: var(--headings-h2);
+}
+.top-bar {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.frame-item {
+  position: relative;
+  border-radius: 3px;
+  width: 11.06rem;
+  height: 11rem;
+  object-fit: cover;
+}
+.ayam-goreng {
+  position: relative;
+  font-weight: 600;
+}
+.dinner {
+  position: absolute;
+  margin: 0 !important;
+  bottom: -1.11rem;
+  left: 2rem;
+  font-size: var(--headings-h2-size);
+}
+.ayam-goreng-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.marker-icon {
+  position: absolute;
+  margin: 0 !important;
+  right: 2.31rem;
+  bottom: 0.03rem;
+  width: 0.5rem;
+  height: 0.42rem;
+}
+.frame-parent {
+  height: 2.28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-xl) var(--padding-smi);
+  box-sizing: border-box;
+  position: relative;
+}
+.rectangle-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-xl);
+  gap: var(--gap-xs);
+}
+.top-bar-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.nutrition-check-scan-fooddri-inner {
+  align-self: stretch;
+  height: 18.72rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--headings-h1-size);
+  color: var(--color);
+  font-family: var(--headings-h2);
+}
+.frame-inner {
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 16.28rem;
+  height: 15.22rem;
+  display: none;
+}
+.gram {
+  position: absolute;
+  top: 2.17rem;
+  left: 4.56rem;
+  display: inline-block;
+  width: 4.11rem;
+  height: 1.44rem;
+  z-index: 1;
+}
+.nutrition-facts {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 800;
+  font-family: inherit;
+  display: inline-block;
+  height: 2.28rem;
+  z-index: 1;
+}
+.pen-1-icon {
+  position: relative;
+  width: 1.28rem;
+  height: 1.28rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.nutrition-facts-parent {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  font-size: var(--headings-biggest-size);
+  font-family: var(--headings-biggest);
+}
+.gram-parent {
+  position: relative;
+  width: 14.67rem;
+  height: 3.61rem;
+}
+.calories {
+  position: relative;
+  display: inline-block;
+  height: 1.44rem;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.miligram {
+  position: relative;
+  z-index: 1;
+}
+.container-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.frame-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-12xl);
+  text-align: left;
+}
+.rectangle-group {
+  border-radius: var(--br-4xs);
+  background-color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 16.39rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0rem var(--padding-16xl) var(--padding-xl);
+  box-sizing: border-box;
+  gap: 1.22rem;
+  text-align: center;
+  font-size: var(--headings-h2-size);
+  color: var(--color);
+  font-family: var(--headings-h2);
+}
+.button-sign-up-child {
+  position: relative;
+  border-radius: var(--br-5xs);
+  background-color: var(--be);
+  width: 19.06rem;
+  height: 2.67rem;
+  display: none;
+}
+.add-meal {
+  position: relative;
+  font-size: var(--headings-h1-size);
+  line-height: 1.33rem;
+  font-weight: 500;
+  font-family: var(--headings-h2);
+  color: var(--white);
+  text-align: center;
+  z-index: 1;
+}
+.button-sign-up {
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-xs) var(--padding-2xl) var(--padding-xs)
+    var(--padding-xl);
+  background-color: var(--be);
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button-sign-up-item {
+  position: relative;
+  border-radius: var(--br-5xs);
+  background-color: var(--bf4848);
+  width: 19.06rem;
+  height: 2.67rem;
+  display: none;
+}
+.cancel {
+  position: relative;
+  line-height: 1.33rem;
+  font-weight: 500;
+  z-index: 1;
+}
+.button-sign-up1 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--bf4848);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs) var(--padding-4xl) var(--padding-xs)
+    var(--padding-xl);
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--headings-h1-size);
+  color: var(--white);
+  font-family: var(--headings-h2);
+}
+.add-cancel {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-base) 0rem var(--padding-mini);
+  gap: var(--gap-6xs);
+}
+.nutrition-check-scan-fooddri {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem 0rem 3.28rem var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+}

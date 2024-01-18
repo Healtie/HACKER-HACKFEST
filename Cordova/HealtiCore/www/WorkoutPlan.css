@@ -1,0 +1,412 @@
+.top-bar-icon3 {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 2.44rem;
+  object-fit: contain;
+}
+.top-bar-wrapper {
+  align-self: stretch;
+  height: -0.44rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+}
+.frame-child30 {
+  position: relative;
+  border-radius: var(--br-81xl);
+  width: 2.33rem;
+  height: 2.33rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-wrapper5 {
+  box-shadow: 0px 0px 4.1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  z-index: 1;
+}
+.healtie9 {
+  position: relative;
+  line-height: 1.33rem;
+  z-index: 1;
+}
+.frame-parent18 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.shape-inner4 {
+  width: 12.72rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-xs);
+  box-sizing: border-box;
+}
+.shape31 {
+  position: absolute;
+  margin: 0 !important;
+  width: 100%;
+  top: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 3.21rem;
+}
+.shape32 {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-gray-100);
+  height: 0.07rem;
+  opacity: 0.1;
+}
+.shape30 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0rem var(--padding-12xs);
+  position: relative;
+  gap: var(--gap-12xs);
+}
+.top-nav-bar4 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.top-nav-bar-wrapper {
+  align-self: stretch;
+  height: 3.83rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+}
+.workout-plan2 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.workout-plan-wrapper {
+  width: 14.17rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-9xs);
+  box-sizing: border-box;
+}
+.rectangle {
+  position: relative;
+  border-radius: var(--br-5xl);
+  border: 1px solid var(--be);
+  box-sizing: border-box;
+  width: 8.94rem;
+  height: 2.31rem;
+  display: none;
+}
+.details {
+  position: relative;
+  font-size: var(--headings-h3-size);
+  font-weight: 600;
+  font-family: var(--headings-h2);
+  color: var(--be);
+  text-align: center;
+  z-index: 1;
+}
+.button5 {
+  cursor: pointer;
+  border: 1px solid var(--be);
+  padding: var(--padding-4xs) 2.67rem var(--padding-4xs) 2.5rem;
+  background-color: transparent;
+  border-radius: var(--br-5xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle1 {
+  position: relative;
+  border-radius: var(--br-5xl);
+  background-color: var(--be);
+  width: 8.94rem;
+  height: 2.31rem;
+  display: none;
+}
+.lock-1-icon {
+  position: relative;
+  width: 0.94rem;
+  height: 0.94rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.exercise {
+  position: relative;
+  font-size: var(--headings-h3-size);
+  font-weight: 600;
+  font-family: var(--headings-h2);
+  color: var(--white);
+  text-align: center;
+  z-index: 1;
+}
+.button6 {
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-4xs) 2rem var(--padding-4xs) var(--padding-6xl);
+  background-color: var(--be);
+  border-radius: var(--br-5xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.section {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  cursor: pointer;
+}
+.frame-parent19 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.workout-plan-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-5xl) 0rem var(--padding-base);
+  box-sizing: border-box;
+  min-height: 6.06rem;
+  text-align: left;
+  font-size: var(--headings-h1-size);
+  color: var(--black);
+  font-family: var(--headings-h2);
+}
+.weight-lifting {
+  position: relative;
+  font-size: var(--headings-h1-size);
+  font-weight: 600;
+  display: inline-block;
+  width: 14.78rem;
+}
+.category-card-child {
+  position: relative;
+  width: 3.56rem;
+  height: 1.78rem;
+  object-fit: cover;
+}
+.full-body-warm1 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.exercises {
+  position: relative;
+}
+.frame-child31 {
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--gray-gray-2);
+  width: 0.22rem;
+  height: 0.22rem;
+}
+.exercises-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-12xs);
+}
+.min {
+  position: relative;
+  font-family: var(--headings-h2);
+  display: inline-block;
+  width: 4.11rem;
+  flex-shrink: 0;
+}
+.frame-parent20 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  font-size: var(--body-2-bold-size);
+  color: var(--gray-gray-2);
+  font-family: var(--headings-biggest);
+}
+.text4 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 6.33rem;
+}
+.icons-chevron-right {
+  position: relative;
+  width: 1.33rem;
+  height: 1.33rem;
+}
+.category-card {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  gap: var(--gap-base);
+  cursor: pointer;
+}
+.exercises-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.min1 {
+  position: relative;
+  line-height: 150%;
+  font-family: var(--headings-h2);
+  display: inline-block;
+  width: 4.11rem;
+  flex-shrink: 0;
+}
+.category-card1 {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  gap: var(--gap-base);
+}
+.exercises2 {
+  position: relative;
+  line-height: 150%;
+}
+.frame-parent22 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  font-size: var(--body-2-bold-size);
+  color: var(--gray-gray-2);
+  font-family: var(--body-2-bold);
+}
+.weight-lifting-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.workout-plan-child {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-8xl) 0rem var(--padding-xl);
+  box-sizing: border-box;
+  min-height: 19.39rem;
+  text-align: left;
+  font-size: var(--headings-h3-size);
+  color: var(--black);
+  font-family: var(--headings-h2);
+}
+.abs-workout {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 5.17rem;
+}
+.see-all2 {
+  position: relative;
+  font-size: var(--body-2-bold-size);
+  line-height: 150%;
+  font-weight: 600;
+  font-family: var(--body-2-bold);
+  color: var(--be);
+  text-align: right;
+}
+.abs-workout-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  font-size: var(--headings-h1-size);
+}
+.workout-plan-inner1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-8xl) 0rem var(--padding-xl);
+  text-align: left;
+  font-size: var(--headings-h3-size);
+  color: var(--black);
+  font-family: var(--headings-h2);
+}
+.workout-plan1 {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem 0rem var(--padding-22xl) var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+  text-align: center;
+  font-size: var(--headings-h1-size);
+  color: var(--be);
+  font-family: var(--headings-h2);
+}

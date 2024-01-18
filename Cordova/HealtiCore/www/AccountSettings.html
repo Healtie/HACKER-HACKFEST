@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./AccountSettings.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap" />
+</head>
+
+<body>
+  <div class="account-settings">
+    <header class="shape20">
+      <div class="inner-shapes-frame">
+        <div class="change-password-frame">
+          <div class="delete-account-frame" id="deleteAccountFrame">
+            <img class="log-out-frame" loading="eager" alt="" src="./public/frame-427320779.svg" />
+          </div>
+          <b class="healtie6">Healtie</b>
+        </div>
+      </div>
+      <div class="shape21"></div>
+      <div class="shape22"></div>
+    </header>
+    <section class="settings-frame">
+      <div class="line-frame-wrapper">
+        <div class="line-frame">
+          <div class="account-settings-label">
+            <h1 class="account-settings1">Account Settings</h1>
+          </div>
+          <div class="figma-design-frame"></div>
+          <div class="button-group-frame">
+            <div class="log-out" id="changePasswordText">Change Password</div>
+          </div>
+          <img class="line-frame-child" loading="eager" alt="" src="./public/line-10.svg" />
+
+          <div class="button-group-frame">
+            <div class="log-out" id="deleteAccountText">Delete Account</div>
+          </div>
+          <img class="line-frame-child" alt="" src="./public/line-10.svg" />
+
+          <div class="button-group-frame">
+            <div class="log-out" id="logOutText">Log Out</div>
+          </div>
+          <img class="line-frame-child" loading="eager" alt="" src="./public/line-10.svg" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    var deleteAccountFrame = document.getElementById("deleteAccountFrame");
+    if (deleteAccountFrame) {
+      deleteAccountFrame.addEventListener("click", function (e) {
+        //window.location.href = "./HomePage.html";
+        window.location.href = document.referrer
+      });
+    }
+
+    var changePasswordText = document.getElementById("changePasswordText");
+    if (changePasswordText) {
+      changePasswordText.addEventListener("click", function (e) {
+        window.location.href = "./ChangePassword.html";
+      });
+    }
+
+    var deleteAccountText = document.getElementById("deleteAccountText");
+    if (deleteAccountText) {
+      deleteAccountText.addEventListener("click", function (e) {
+        window.location.href = "./DeleteAccount.html";
+      });
+    }
+
+    var logOutText = document.getElementById("logOutText");
+    if (logOutText) {
+      logOutText.addEventListener("click", function (e) {
+        window.location.href = "./WelcomePage.html";
+      });
+    }
+  </script>
+</body>
+
+</html>

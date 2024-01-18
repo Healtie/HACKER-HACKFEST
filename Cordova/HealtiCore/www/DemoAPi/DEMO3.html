@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Storage Upload</title>
+</head>
+
+<body>
+
+    <input type="file" id="fileInput" accept="image/*" />
+    <div onclick="pat()">Upload Image</div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+        import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyB_jSekepIyBEOekHuZeAyZQ-Jvxr8XdDs",
+            authDomain: "healtie211.firebaseapp.com",
+            projectId: "healtie211",
+            storageBucket: "healtie211.appspot.com",
+            messagingSenderId: "93523718510",
+            appId: "1:93523718510:web:ab721a82495f4ef602d17f",
+            measurementId: "G-MSYDV58B7M"
+        };
+
+        const firebaseApp = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(firebaseApp);
+        const storage = getStorage(firebaseApp);
+    </script>
+
+
+    <script>
+        function pat() {
+            console.log("asdas")
+            uploadImage()
+        }
+
+        async function uploadImage() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+
+            if (file) {
+                try {
+                    const storageRef = ref(storage, 'food/' + file.name);
+                    await uploadBytes(storageRef, file);
+
+                    console.log('File berhasil diupload!');
+
+                    const downloadURL = await getDownloadURL(storageRef);
+                    console.log('URL Download:', downloadURL);
+                } catch (error) {
+                    console.error('Error saat mengupload file:', error);
+                }
+            } else {
+                console.error('Pilih file gambar terlebih dahulu.');
+            }
+        }
+    </script>
+</body>
+
+</html>

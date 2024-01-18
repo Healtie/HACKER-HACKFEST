@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap" />
+</head>
+
+<body>
+  <!-- buatkan aku modal untuk menyampaikan pesan error -->
+  <div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="modal-title" class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div id="modal-body" class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="closeModal" class="btn btn-secondary" data-bs-dismiss="modal">oke</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showModal(title, body) {
+      var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+      document.getElementById("modal-title").innerHTML = title;
+      document.getElementById("modal-body").innerHTML = body;
+      myModal.show();
+    }
+
+    var closeModal = document.getElementById("closeModal");
+    if (closeModal) {
+      closeModal.addEventListener("click", function (e) {
+        var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+        myModal.hide();
+      });
+    }
+  </script>
+  <!-- end of secment modal -->
+  <div class="nutrition-check-scan-fooddri">
+    <section class="nutrition-check-scan-fooddri-inner">
+      <div class="top-bar-parent">
+        <div class="top-bar">
+          <!-- <img class="top-bar-icon" alt="" src="./public/top-bar@2x.png" /> -->
+
+          <header class="top-nav-bar" id="topNavBar">
+            <div class="shape">
+              <div class="healtie-wrapper">
+                <div class="healtie">
+                  <div class="healtie-inner" id="frameContainer">
+                    <img class="frame-child" loading="eager" alt="" src="./public/frame-427320779.svg" />
+                  </div>
+                  <b class="healtie1">Healtie</b>
+                </div>
+              </div>
+              <div class="shape1"></div>
+              <div class="shape2"></div>
+            </div>
+          </header>
+        </div>
+        <div class="rectangle-parent">
+          <img class="frame-item" loading="eager" alt=""
+            src="https://img-global.cpcdn.com/recipes/1c12c262894b70c5/680x482cq70/ayam-kampung-goreng-ala-rumah-makan-nasi-ayam-di-pontianak-foto-resep-utama.jpg">
+
+          <div class="frame-parent">
+            <div class="ayam-goreng-parent">
+              <div class="ayam-goreng">Rice Fried Chicken</div>
+              <div class="dinner">Lunch</div>
+            </div>
+            <img class="marker-icon" loading="eager" alt="" src="./public/vector-17.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rectangle-group">
+      <div class="frame-inner"></div>
+      <div class="gram-parent" style="display: none;">
+        <!-- <div class="gram">100 gram</div> -->
+        <!-- <div class="nutrition-facts-parent"> -->
+        <!-- <h1 class="nutrition-facts">Nutrition Facts</h1> -->
+        <!-- <img class="pen-1-icon" loading="eager" alt="" src="./public/pen-11.svg" /> -->
+        <!-- </div> -->
+      </div>
+      <div class="frame-wrapper">
+        <div class="container-parent">
+          <div class="container">
+            <div class="calories">Calories</div>
+            <div class="calories">Sugar</div>
+            <div class="calories">Fat</div>
+            <div class="calories">Natrium</div>
+          </div>
+          <div class="container">
+            <div class="calories">329 kcal</div>
+            <div class="miligram">5 g</div>
+            <div class="miligram">13 g</div>
+            <div class="miligram">598 mg</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="add-cancel">
+      <button class="button-sign-up" id="buttonSignUp">
+        <div class="button-sign-up-child"></div>
+        <div class="add-meal">Add Meal</div>
+      </button>
+      <footer class="button-sign-up1" id="buttonSignUp1">
+        <div class="button-sign-up-item"></div>
+        <div class="cancel">Cancel</div>
+      </footer>
+    </section>
+  </div>
+
+  <script>
+    var frameContainer = document.getElementById("frameContainer");
+    if (frameContainer) {
+      frameContainer.addEventListener("click", function (e) {
+        window.location.href = "./HomePage.html";
+      });
+    }
+
+    var topNavBar = document.getElementById("topNavBar");
+    if (topNavBar) {
+      topNavBar.addEventListener("click", function (e) {
+        window.location.href = "./HomePage.html";
+      });
+    }
+
+    var buttonSignUp = document.getElementById("buttonSignUp");
+    if (buttonSignUp) {
+      buttonSignUp.addEventListener("click", function (e) {
+        window.location.href = "./HomePage.html";
+      });
+    }
+
+    var buttonSignUp1 = document.getElementById("buttonSignUp1");
+    if (buttonSignUp1) {
+      buttonSignUp1.addEventListener("click", function (e) {
+        window.location.href = "./NutritionCheck.html";
+      });
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

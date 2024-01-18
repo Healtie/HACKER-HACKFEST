@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./NutritionCheck.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap"
+    />
+  </head>
+  <body>
+ <!-- buatkan aku modal untuk menyampaikan pesan error -->
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="modal-title" class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div id="modal-body" class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" id="closeModal" class="btn btn-secondary" data-bs-dismiss="modal">oke</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+       function showModal(title, body) {
+        var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+        document.getElementById("modal-title").innerHTML = title;
+        document.getElementById("modal-body").innerHTML = body;
+        myModal.show();
+      }
+
+      var closeModal = document.getElementById("closeModal");
+      if (closeModal) {
+        closeModal.addEventListener("click", function (e) {
+          var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+          myModal.hide();
+        });
+      }
+    </script>
+    <!-- end of secment modal -->
+    <div class="nutrition-check1">
+      <div class="top-nav-bar-frame">
+        <header class="top-nav-bar6" id="topNavBar">
+          <div class="shape36">
+            <div class="shape-inner6">
+              <div class="frame-parent34">
+                <div class="frame-wrapper7" id="frameContainer">
+                  <img class="frame-child42" loading="eager" alt="" />
+                </div>
+                <b class="healtie11">Healtie</b>
+              </div>
+            </div>
+            <div class="shape37"></div>
+            <div class="shape38"></div>
+          </div>
+        </header>
+      </div>
+      <section class="frame-parent35">
+        <div class="today-parent">
+          <h1 class="today">Today</h1>
+          <div class="sat-6-january1">Sat, 6 January 2024</div>
+        </div>
+        <div class="line-div"></div>
+        <div class="frame-parent36">
+          <div class="group">
+            <div class="eaten">1.560</div>
+            <div class="eaten-wrapper">
+              <div class="eaten">Eaten</div>
+            </div>
+          </div>
+          <div class="frame-parent37">
+            <div class="frame">
+              <div class="eaten">540</div>
+            </div>
+            <div class="remaining-wrapper">
+              <div class="eaten">Remaining</div>
+            </div>
+          </div>
+          <div class="frame-parent37">
+            <div class="wrapper1">
+              <div class="eaten">250</div>
+            </div>
+            <div class="remaining-wrapper">
+              <div class="eaten">Burned</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nutrition-check-inner">
+        <div class="frame-parent39">
+          <div class="frame-parent40">
+            <div class="meals-breakdown-parent">
+              <div class="eaten">Meals Breakdown</div>
+              <div class="see-all-parent">
+                <div class="see-all4">See all</div>
+                <img
+                  class="icon8"
+                  loading="eager"
+                  alt=""
+                  src="./public/icon21.svg"
+                />
+              </div>
+            </div>
+            <div class="rectangle-parent12">
+              <div class="frame-child43"></div>
+              <div class="breakfast-parent">
+                <div class="breakfast1">Breakfast</div>
+                <div class="kcal4">228 kcal</div>
+              </div>
+              <div class="add-circle-fill0-wght400-grad0-wrapper">
+                <img
+                  class="add-circle-fill0-wght400-grad0-icon"
+                  loading="eager"
+                  alt=""
+                  src="./public/add-circle-fill0-wght400-grad0-opsz24-1.svg"
+                  id="addCircleFILL0Wght400GRAD0Icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-parent13">
+            <div class="frame-child43"></div>
+            <div class="breakfast-parent">
+              <div class="breakfast1">Lunch</div>
+              <div class="kcal5">482 kcal</div>
+            </div>
+            <img
+              class="add-circle-fill0-wght400-grad0-icon"
+              alt=""
+              src="./public/add-circle-fill0-wght400-grad0-opsz24-1.svg"
+              id="addCircleFILL0Wght400GRAD0Icon1"
+            />
+          </div>
+          <div class="rectangle-parent14">
+            <div class="frame-child45"></div>
+            <div class="snacks">Dinner</div>
+            <div class="kcal6">349 kcal</div>
+            <img
+              class="add-circle-fill0-wght400-grad0-icon2"
+              alt=""
+              src="./public/add-circle-fill0-wght400-grad0-opsz24-1-2.svg"
+              id="addCircleFILL0Wght400GRAD0Icon2"
+            />
+          </div>
+          <div class="rectangle-parent14">
+            <div class="frame-child45"></div>
+            <div class="snacks">Snacks</div>
+            <div class="kcal6">274 kcal</div>
+            <img
+              class="add-circle-fill0-wght400-grad0-icon2"
+              loading="eager"
+              alt=""
+              src="./public/add-circle-fill0-wght400-grad0-opsz24-1-2.svg"
+              id="addCircleFILL0Wght400GRAD0Icon3"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          window.location.href = "./HomePage.html";
+        });
+      }
+
+      var topNavBar = document.getElementById("topNavBar");
+      if (topNavBar) {
+        topNavBar.addEventListener("click", function (e) {
+          window.location.href = "./HomePage.html";
+        });
+      }
+
+      var addCircleFILL0Wght400GRAD0Icon = document.getElementById(
+        "addCircleFILL0Wght400GRAD0Icon",
+      );
+      if (addCircleFILL0Wght400GRAD0Icon) {
+        addCircleFILL0Wght400GRAD0Icon.addEventListener("click", function (e) {
+          window.location.href = "./NutritionCheckScanFoodDrink1.html";
+        });
+      }
+
+      var addCircleFILL0Wght400GRAD0Icon1 = document.getElementById(
+        "addCircleFILL0Wght400GRAD0Icon1",
+      );
+      if (addCircleFILL0Wght400GRAD0Icon1) {
+        addCircleFILL0Wght400GRAD0Icon1.addEventListener("click", function (e) {
+          window.location.href = "./NutritionCheckScanFoodDrink1.html";
+        });
+      }
+
+      var addCircleFILL0Wght400GRAD0Icon2 = document.getElementById(
+        "addCircleFILL0Wght400GRAD0Icon2",
+      );
+      if (addCircleFILL0Wght400GRAD0Icon2) {
+        addCircleFILL0Wght400GRAD0Icon2.addEventListener("click", function (e) {
+          window.location.href = "./NutritionCheckScanFoodDrink1.html";
+        });
+      }
+
+      var addCircleFILL0Wght400GRAD0Icon3 = document.getElementById(
+        "addCircleFILL0Wght400GRAD0Icon3",
+      );
+      if (addCircleFILL0Wght400GRAD0Icon3) {
+        addCircleFILL0Wght400GRAD0Icon3.addEventListener("click", function (e) {
+          window.location.href = "./NutritionCheckScanBarcode.html";
+        });
+      }
+    </script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

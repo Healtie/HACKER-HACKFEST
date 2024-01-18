@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./NutritionCheckScanBarcode.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap" />
+</head>
+
+<body style="overflow-x: hidden !important; width: 100vw;">
+  <!-- buatkan aku modal untuk menyampaikan pesan error -->
+  <div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="modal-title" class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="modal-body" class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="closeModal" class="btn btn-secondary" data-bs-dismiss="modal">oke</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showModal(title, body) {
+      var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+      document.getElementById("modal-title").innerHTML = title;
+      document.getElementById("modal-body").innerHTML = body;
+      myModal.show();
+    }
+    var closeModal = document.getElementById("closeModal");
+    if (closeModal) {
+      closeModal.addEventListener("click", function (e) {
+        var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+        myModal.hide();
+      });
+    }
+  </script>
+  <!-- end of secment modal -->
+  <div class="braketfream" style="position: absolute;height: 100vh !important;width: 100vw !important;">
+    <video id="video" autoplay style="position: absolute;"></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <!-- <iframe src="https://www.youtube.com/embed/6-YSoJyMJPA?si=zcXz6SWOfBNCflPD" title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      style="position: absolute;height: 100vh !important;width: 100vw !important;"></iframe> -->
+  </div>
+  <div class="nutrition-check-scan-barcode" style="height: 100vh; overflow: hidden;">
+    <div class="home-indicator5">
+      <div class="shape39"></div>
+      <div class="indicator3"></div>
+    </div>
+    <!-- <img class="image-3-icon1" alt="" src="./public/image-31@2x.png" id="image3" /> -->
+    <main class="inner-frame">
+      <div class="top-bar-frame1">
+        <img class="subtract-vectors-icon" loading="eager" alt="" src="./public/frame-427320779.svg" id="topBarFrame">
+        <img class="subtract-vectors-icon" loading="eager" alt="" src="./public/frame-427320779-2.svg"
+          id="switchCamera">
+      </div>
+      <section class="top-bar-group">
+        <!-- <img class="top-bar-icon5" alt="" src="./public/top-bar@2x.png" /> -->
+        <!-- <img class="subtract-icon1" alt="" src="./public/subtract.svg" /> -->
+        <img class="input-area-icon" loading="eager" alt="" src="./public/vector-4.svg" />
+        <img class="input-area-icon1" loading="eager" alt="" src="./public/vector-6.svg" />
+        <img class="input-area-icon2" loading="eager" alt="" src="./public/vector-5.svg" />
+        <img class="input-area-icon3" loading="eager" alt="" src="./public/vector-7.svg" />
+        <img class="q-r-code-frame" onclick="lwo()" loading="eager" alt="" src="./public/frame-42732077911.svg" />
+      </section>
+      <section class="manual-input-frame" style="margin-top: -30vw;">
+        <img class="manual-input-frame-child" alt="" src="./public/rectangle-271.svg" />
+        <div class="nutrition-text">
+          <div class="you-can-also1"> You can also input the nutrition manually </div>
+        </div>
+        <div class="barcode-scanner-frame">
+          <button class="scan-food-input-and-q-r" id="scanFoodInputAndQR">
+            <div class="scan-food">Scan Food</div>
+            <img class="qr-icon1" alt="" src="./public/qr.svg" />
+          </button>
+          <button class="scan-food-input-and-q-r1">
+            <div class="scan-food">Input Nutrition</div>
+            <img class="barcode-icon1" alt="" src="./public/barcode.svg" />
+          </button>
+        </div>
+      </section>
+    </main>
+    <div class="nutrition-check-scan-barcode-child"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    function loadkamera() {
+      document.addEventListener('DOMContentLoaded', () => {
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const switchCameraButton = document.getElementById('switchCamera');
+        const context = canvas.getContext('2d');
+        let currentStream;
+        // Fungsi untuk mendapatkan data kamera terakhir yang digunakan
+        // function getLastUsedCamera() {
+        //   const lastUsedCamera = localStorage.getItem('lastUsedCamera');
+        //   return lastUsedCamera ? JSON.parse(lastUsedCamera) : null;
+        // }
+        function getLastUsedCamera() {
+          const lastUsedCamera = localStorage.getItem('lastUsedCamera');
+          return lastUsedCamera ? JSON.parse(lastUsedCamera) : null;
+        }
+        // Fungsi untuk menyimpan data kamera terakhir yang digunakan
+        function saveLastUsedCamera(deviceId, label) {
+          const lastUsedCamera = {
+            deviceId,
+            label
+          };
+          // alert('Last Used Camera:', deviceId, label);
+          localStorage.setItem('lastUsedCamera', JSON.stringify(lastUsedCamera));
+          console.log(localStorage.getItem('lastUsedCamera'))
+        }
+        async function getCameraDevices() {
+          try {
+            const devices = await navigator.mediaDevices.enumerateDevices();
+            return devices.filter(device => device.kind === 'videoinput');
+          } catch (error) {
+            displayError('Error getting camera devices: ' + error.message);
+          }
+        }
+        async function switchCamera() {
+          try {
+            const cameraDevices = await getCameraDevices();
+            if (cameraDevices.length < 2) {
+              displayError('Hanya satu kamera yang tersedia.');
+              return;
+            }
+            const currentTrack = currentStream.getTracks()[0];
+            if (currentTrack) {
+              currentTrack.stop();
+            }
+            const lastUsedCamera = getLastUsedCamera();
+            let nextDevice;
+            if (lastUsedCamera) {
+              nextDevice = cameraDevices.find(device => device.deviceId === lastUsedCamera.deviceId);
+            }
+            if (!nextDevice) {
+              nextDevice = cameraDevices.find(device => device.label.includes('back'));
+            }
+            if (nextDevice) {
+              const constraints = {
+                video: {
+                  deviceId: {
+                    exact: nextDevice.deviceId
+                  },
+                  facingMode: 'environment'
+                }
+              };
+              const stream = await navigator.mediaDevices.getUserMedia(constraints);
+              video.srcObject = stream;
+              currentStream = stream;
+              saveLastUsedCamera(nextDevice.deviceId, nextDevice.label);
+            }
+          } catch (error) {
+            displayError('Error switching camera: ' + error.message);
+          }
+        }
+
+        function displayError(message) {
+          showModal("error kokonya", message)
+        }
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({
+            video: true
+          }).then((stream) => {
+            video.srcObject = stream;
+            currentStream = stream;
+            video.play();
+          }).catch((error) => {
+            displayError('Error accessing camera: ' + error.message);
+          });
+        }
+        video.addEventListener('canplay', () => {
+          setInterval(() => {
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+          }, 1000 / 30);
+        });
+        switchCameraButton.addEventListener('click', switchCamera);
+      });
+    }
+    loadkamera();
+    function lwo() {
+      console.log("bin")
+      setTimeout(() => {
+        var rep = `
+          <div class="row container">
+            <div class="col-12">
+              <h4>Susu Ultramilk 250ml</h4>
+            </div>
+            <div class="col-12 row">
+              <div class="col-6">Kalori</div>
+              <div class="col-6">150 kkal</div>
+            </div>
+            <div class="col-12 row">
+              <div class="col-6">Lemak</div>
+              <div class="col-6">8 gram</div>
+            </div>
+            <div class="col-12 row">
+              <div class="col-6">Protein</div>
+              <div class="col-6">8 gram</div>
+            </div>
+            <div class="col-12 row">
+              <div class="col-6">Sugar</div>
+              <div class="col-6">18 gram</div>
+            </div>
+          </div>
+          `
+        showModal("Produk Terdeteksi", rep)
+      }, 2000);
+    }
+    setTimeout(() => {
+      try {
+        document.getElementById('switchCamera').click()
+      } catch {
+        console.log('error')
+      }
+    }, 800);
+  </script>
+  <script>
+    var image3 = document.getElementById("image3");
+    if (image3) {
+      image3.addEventListener("click", function (e) {
+        window.location.href = "./SeeAll.html";
+      });
+    }
+    var topBarFrame = document.getElementById("topBarFrame");
+    if (topBarFrame) {
+      topBarFrame.addEventListener("click", function (e) {
+        window.location.href = "./HomePage.html";
+      });
+    }
+    var scanFoodInputAndQR = document.getElementById("scanFoodInputAndQR");
+    if (scanFoodInputAndQR) {
+      scanFoodInputAndQR.addEventListener("click", function (e) {
+        window.location.href = "./NutritionCheckScanFoodDrink1.html";
+      });
+    }
+  </script>
+</body>
+
+</html>

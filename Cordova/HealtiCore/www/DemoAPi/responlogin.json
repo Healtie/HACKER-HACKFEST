@@ -1,0 +1,11 @@
+{
+    "acc":true,
+    "data":{
+        "username": "admin",
+        "nama": "Ferren Andrea",
+        "email": "Ferren@healtie.com",
+        "password": "admin",
+        "role": "user",
+        "tokenpet" : "1234567890"    
+    }
+}

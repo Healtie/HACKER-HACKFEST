@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./SignUp.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap"
+    />
+  </head>
+  <body>
+ <!-- buatkan aku modal untuk menyampaikan pesan error -->
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="modal-title" class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div id="modal-body" class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" id="closeModal" class="btn btn-secondary" data-bs-dismiss="modal">oke</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+       function showModal(title, body) {
+        var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+        document.getElementById("modal-title").innerHTML = title;
+        document.getElementById("modal-body").innerHTML = body;
+        myModal.show();
+      }
+
+      var closeModal = document.getElementById("closeModal");
+      if (closeModal) {
+        closeModal.addEventListener("click", function (e) {
+          var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+          myModal.hide();
+        });
+      }
+    </script>
+    <!-- end of secment modal -->
+    <div class="sign-up">
+      <section class="full-name-input-parent">
+        <div class="full-name-input">
+          <h1 class="create-an-account">Create an Account</h1>
+          <div class="sign-up-to">Sign up to join</div>
+        </div>
+        <div class="sign-up-label">
+          <div class="name-email-frame">
+            <div class="full-name">
+              <div class="email">Full Name</div>
+              <input class="your-name" placeholder="Your Name" type="text" />
+            </div>
+            <div class="name-email-rectangle"></div>
+          </div>
+          <div class="name-email-frame">
+            <div class="email-parent">
+              <div class="email">Email</div>
+              <input
+                class="yournamemailcom"
+                placeholder="yourname@mail.com"
+                type="text"
+              />
+            </div>
+            <div class="name-email-rectangle"></div>
+          </div>
+          <div class="name-email-frame">
+            <div class="mobile-number-parent">
+              <div class="email">Mobile Number</div>
+              <input
+                class="input"
+                placeholder="+62 896 2525 9970"
+                type="text"
+              />
+            </div>
+            <div class="name-email-rectangle"></div>
+          </div>
+          <div class="name-email-frame3">
+            <div class="password-parent">
+              <div class="email">Password</div>
+              <div class="div5">********</div>
+            </div>
+            <div class="name-email-rectangle"></div>
+          </div>
+          <div class="icon-frame1">
+            <img class="icon3" loading="eager" alt="" />
+
+            <div class="email">
+              <span>I agree to the </span>
+              <span class="terms-of-service">Terms of Service</span>
+            </div>
+          </div>
+        </div>
+        <button class="button-sign-up2" id="buttonSignUp">
+          <div class="button-sign-up-inner"></div>
+          <div class="sign-up1">Sign Up</div>
+        </button>
+      </section>
+      <div class="have-an-account-container" id="haveAnAccount">
+        <span>Have an account? </span>
+        <span class="sign-in5">Sign in</span>
+      </div>
+    </div>
+
+    <script>
+      var buttonSignUp = document.getElementById("buttonSignUp");
+      if (buttonSignUp) {
+        buttonSignUp.addEventListener("click", function (e) {
+          window.location.href = "./FilterPage.html";
+        });
+      }
+
+      var haveAnAccount = document.getElementById("haveAnAccount");
+      if (haveAnAccount) {
+        haveAnAccount.addEventListener("click", function (e) {
+          window.location.href = "./SignIn.html";
+        });
+      }
+    </script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

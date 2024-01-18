@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="data"></div>
+    <!-- print semua yang di simpan di localstorage -->
+    <script>
+        var totaldata = localStorage.length;
+        var data = document.getElementById("data");
+        for (var i = 0; i < totaldata; i++) {
+            var key = localStorage.key(i);
+            var value = localStorage.getItem(key);
+            data.innerHTML += key + " : " + value + "<br>";
+        }
+    </script>
+
+    
+</body>
+</html>

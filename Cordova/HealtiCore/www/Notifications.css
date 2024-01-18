@@ -1,0 +1,194 @@
+.bottom-nav-bar2 {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0rem;
+  width: 100vw;
+  height: 3.11rem;
+  object-fit: cover;
+}
+
+.notifications-child {
+  position: absolute;
+  bottom: 3.06rem;
+  left: 8.89rem;
+  width: 3.11rem;
+  height: 3.11rem;
+  cursor: pointer;
+}
+
+.notifications-item {
+  position: absolute;
+  top: 3.83rem;
+  left: 0rem;
+  background-color: var(--e2e2e2);
+  width: 100vw;
+  height: 5.44rem;
+}
+
+.watch-your-calorie {
+  position: absolute;
+  top: 4.67rem;
+  left: 2.67rem;
+  font-weight: 600;
+}
+
+.notifcations-1-icon {
+  position: absolute;
+  top: 4.72rem;
+  left: 1.17rem;
+  width: 1.17rem;
+  height: 1.17rem;
+  overflow: hidden;
+}
+
+.oops-it-looks {
+  position: absolute;
+  top: 5.89rem;
+  left: 2.67rem;
+  font-size: var(--caption-regular-size);
+  font-family: var(--headings-biggest);
+  display: inline-block;
+  width: 16.5rem;
+}
+
+.notifications-inner {
+  position: absolute;
+  top: 16.39rem;
+  left: 0rem;
+  background-color: var(--e2e2e2);
+  width: 100vw;
+  height: 5.44rem;
+}
+
+.time-to-log {
+  position: absolute;
+  top: 17.22rem;
+  left: 2.67rem;
+  font-weight: 600;
+}
+
+.notifcations-3-icon {
+  position: absolute;
+  top: 17.28rem;
+  left: 1.17rem;
+  width: 1.17rem;
+  height: 1.17rem;
+  overflow: hidden;
+}
+
+.dont-forget-to {
+  position: absolute;
+  top: 18.44rem;
+  left: 2.67rem;
+  font-size: var(--caption-regular-size);
+  font-family: var(--headings-biggest);
+  display: inline-block;
+  width: 16.5rem;
+}
+
+.notifications-child1 {
+  position: absolute;
+  top: 22.67rem;
+  left: 0rem;
+  background-color: var(--e2e2e2);
+  width: 100vw;
+  height: 5.44rem;
+}
+
+.great-progress {
+  position: absolute;
+  top: 23.5rem;
+  left: 2.67rem;
+  font-weight: 600;
+}
+
+.notifcations-4-icon {
+  position: absolute;
+  top: 23.56rem;
+  left: 1.17rem;
+  width: 1.17rem;
+  height: 1.17rem;
+  overflow: hidden;
+}
+
+.keep-up-the {
+  position: absolute;
+  top: 24.72rem;
+  left: 2.67rem;
+  font-size: var(--caption-regular-size);
+  font-family: var(--headings-biggest);
+  display: inline-block;
+  width: 16.5rem;
+}
+
+.notifications-child2 {
+  position: absolute;
+  top: 10.11rem;
+  left: 0rem;
+  background-color: var(--e2e2e2);
+  width: 100vw;
+  height: 5.44rem;
+}
+
+.get-moving-today {
+  position: absolute;
+  top: 10.94rem;
+  left: 2.67rem;
+  font-weight: 600;
+}
+
+.notifcations-2-icon {
+  position: absolute;
+  top: 11rem;
+  left: 1.17rem;
+  width: 1.17rem;
+  height: 1.17rem;
+  overflow: hidden;
+}
+
+.its-time-to {
+  position: absolute;
+  top: 12.17rem;
+  left: 2.67rem;
+  font-size: var(--caption-regular-size);
+  font-family: var(--headings-biggest);
+  display: inline-block;
+  width: 16.5rem;
+}
+
+.upc-scan-1-icon2 {
+  position: absolute;
+  top: 2.06rem;
+  left: 0rem;
+  width: 1.56rem;
+  height: 1.56rem;
+  overflow: hidden;
+}
+
+/* media screan 1000x100 */
+@media (max-width: 360px) {
+  .icon6 {
+    left: 8.67rem;
+  }
+}
+
+
+.icon6 {
+  position: absolute;
+  bottom: 3.89rem;
+  left: 9.67rem;
+  width: 1.56rem;
+  height: 3.61rem;
+}
+
+.notifications {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 45.11rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--headings-h3-size);
+  color: var(--color);
+  font-family: var(--headings-h2);
+}

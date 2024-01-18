@@ -1,0 +1,214 @@
+.frame-child17 {
+  position: relative;
+  border-radius: var(--br-81xl);
+  width: 2.33rem;
+  height: 2.33rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-wrapper1 {
+  box-shadow: 0px 0px 4.1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.frame-child18 {
+  position: relative;
+  border-radius: 50%;
+  width: 1.94rem;
+  height: 1.94rem;
+}
+.ellipse-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-10xs);
+}
+.full-body-warm {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.full-body-warm-up-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem 0rem var(--padding-8xs);
+}
+.frame-section {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  min-height: 7.39rem;
+  text-align: center;
+  font-size: 1.33rem;
+  color: var(--black);
+  font-family: var(--headings-h2);
+}
+.frame-child19 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 50%;
+  background-color: rgba(170, 172, 176, 0.11);
+  width: 16rem;
+  height: 16rem;
+}
+.grousdp-1-icon {
+  position: absolute;
+  top: 4.67rem;
+  left: 2rem;
+  width: 12rem;
+  height: 6.67rem;
+  object-fit: cover;
+  z-index: 1;
+}
+.ellipse-parent4 {
+  flex: 1;
+  position: relative;
+  height: 16rem;
+}
+.frame-wrapper2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.workout-session-inner {
+  align-self: stretch;
+  height: 16.44rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-xl) 0rem var(--padding-5xl);
+  box-sizing: border-box;
+}
+.b {
+  flex: 1;
+  position: relative;
+  line-height: 130%;
+}
+.sign-in2 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--headings-h1-size);
+  font-weight: 600;
+  font-family: var(--headings-h2);
+  color: var(--be);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button2 {
+  cursor: pointer;
+  border: 1px solid var(--be);
+  padding: var(--padding-base) var(--padding-mini);
+  background-color: transparent;
+  flex: 1;
+  border-radius: var(--br-base);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.61rem;
+}
+.sign-in3 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--headings-h1-size);
+  font-weight: 600;
+  font-family: var(--headings-h2);
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button3 {
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-base);
+  background-color: var(--be);
+  flex: 1;
+  border-radius: var(--br-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 5.61rem;
+}
+.buttons {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.buttons-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sign-in4 {
+  flex: 1;
+  position: relative;
+  font-size: var(--headings-h1-size);
+  font-weight: 600;
+  font-family: var(--headings-h2);
+  color: var(--white);
+  text-align: center;
+}
+.button4 {
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-base);
+  background-color: var(--bf91);
+  align-self: stretch;
+  border-radius: var(--br-base);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.buttons-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+.workout-session {
+  position: relative;
+  background-color: #f8f8f8;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-mid) var(--padding-6xl) 5.17rem var(--padding-lg);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  text-align: center;
+  font-size: var(--headings-biggest-size);
+  color: var(--black);
+  font-family: var(--body-2-bold);
+}

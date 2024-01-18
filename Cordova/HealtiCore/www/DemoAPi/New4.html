@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Scanner</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"
+        integrity="sha512-k2wo/BkbloaRU7gc/RkCekHr4IOVe10kYxJ/Q8dRPl7u3YshAQmg3WfZtIcseEk+nGBdK03fHBeLgXTxRmWCLQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <input type="file" id="fileInput" accept="image/*">
+    <div id="barcodeResult"></div>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', handleFile);
+
+        function handleFile(event) {
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imageDataUrl = e.target.result;
+                    detectBarcode(imageDataUrl);
+
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function detectBarcode(imageDataUrl) {
+            const img = new Image();
+            img.onload = function () {
+                JsBarcode("#barcodeResult", img, {
+                    format: "CODE128",
+                    displayValue: true,
+                    fontSize: 20,
+                    margin: 10
+                });
+            };
+            img.src = imageDataUrl;
+        }
+    </script>
+
+</body>
+
+</html>

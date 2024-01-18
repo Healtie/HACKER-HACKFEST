@@ -1,0 +1,148 @@
+.log-out-frame {
+  position: relative;
+  border-radius: var(--br-81xl);
+  width: 2.33rem;
+  height: 2.33rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.delete-account-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  z-index: 1;
+}
+.healtie6 {
+  position: relative;
+  line-height: 1.33rem;
+  z-index: 1;
+}
+.change-password-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.inner-shapes-frame {
+  width: 12.33rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-8xs);
+  box-sizing: border-box;
+}
+.shape21 {
+  position: absolute;
+  margin: 0 !important;
+  width: 100%;
+  top: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 2.44rem;
+}
+.shape22 {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-gray-100);
+  height: 0.06rem;
+  opacity: 0.1;
+}
+.shape20 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-11xs);
+  text-align: center;
+  font-size: var(--headings-h1-size);
+  color: var(--be);
+  font-family: var(--headings-h2);
+}
+.account-settings1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.account-settings-label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-8xl);
+  font-size: var(--headings-biggest-size);
+  color: var(--color-gray-100);
+}
+.figma-design-frame {
+  align-self: stretch;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+  height: 0.06rem;
+}
+.button-group-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem var(--padding-7xl);
+}
+.line-frame-child {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.log-out {
+  position: relative;
+  cursor: pointer;
+}
+.line-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.line-frame-wrapper {
+  width: 20.89rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+}
+.settings-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0rem 0rem 0rem 0rem;
+  text-align: left;
+  font-size: var(--headings-h2-size);
+  color: var(--color);
+  font-family: var(--headings-h2);
+}
+.account-settings {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0rem 27.33rem;
+  box-sizing: border-box;
+  gap: 4.17rem;
+}

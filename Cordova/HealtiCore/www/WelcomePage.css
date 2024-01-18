@@ -1,0 +1,113 @@
+.bg-child {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: var(--white);
+  width: 100vw;
+  height: 45.11rem;
+  display: none;
+}
+
+.image-place-holder-child {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: var(--color-gainsboro-200);
+  width: 100vw;
+  height: 45.11rem;
+  display: none;
+}
+
+.shape-icon2 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 100vw;
+  height: 45.11rem;
+}
+
+.button-get-started-child {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-deepskyblue);
+  width: 91vw;
+  height: 2.67rem;
+  cursor: pointer;
+}
+
+.get-started {
+  position: absolute;
+  top: 0.67rem;
+  left: 6.61rem;
+  line-height: 1.33rem;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.button-get-started {
+  position: absolute;
+  top: 39.67rem;
+  left: 0.89rem;
+  width: 91vw;
+  height: 2.67rem;
+  z-index: 3;
+  text-align: center;
+  font-size: var(--headings-h1-size);
+  color: var(--white);
+  font-family: var(--headings-h2);
+}
+
+.your-health-bestie {
+  position: absolute;
+  top: 15.56rem;
+  left: 6rem;
+  line-height: 1.33rem;
+  z-index: 3;
+}
+
+.healtie7 {
+  margin: 0;
+  position: absolute;
+  top: 12rem;
+  left: 5.56rem;
+  font-size: 2.67rem;
+  font-weight: 700;
+  font-family: var(--headings-h2);
+  color: var(--color-deepskyblue);
+  z-index: 3;
+}
+
+.image-place-holder {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: var(--color-gainsboro-200);
+  width: 100vw;
+  height: 45.11rem;
+  z-index: 1;
+  text-align: center;
+  font-size: var(--headings-h1-size);
+  color: var(--color-dimgray);
+  font-family: var(--headings-biggest);
+}
+
+.bg {
+  flex: 1;
+  position: relative;
+  background-color: var(--white);
+  height: 45.11rem;
+}
+
+.welcome-page {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -4rem;
+}

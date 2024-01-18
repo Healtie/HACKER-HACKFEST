@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./SeeAll.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap"
+    />
+  </head>
+  <body>
+ <!-- buatkan aku modal untuk menyampaikan pesan error -->
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="modal-title" class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div id="modal-body" class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" id="closeModal" class="btn btn-secondary" data-bs-dismiss="modal">oke</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+       function showModal(title, body) {
+        var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+        document.getElementById("modal-title").innerHTML = title;
+        document.getElementById("modal-body").innerHTML = body;
+        myModal.show();
+      }
+
+      var closeModal = document.getElementById("closeModal");
+      if (closeModal) {
+        closeModal.addEventListener("click", function (e) {
+          var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+          myModal.hide();
+        });
+      }
+    </script>
+    <!-- end of secment modal -->
+    <div class="see-all">
+      <div class="frame-top-bar">
+        <img class="top-bar-icon1" alt="" src="./public/top-bar@2x.png" />
+      </div>
+      <div class="frame-january">
+        <div class="top-nav-bar1" id="topNavBar">
+          <div class="shape3">
+            <div class="rectangle-shape">
+              <div class="frame-shape">
+                <div class="frame-frame" id="frameFrameContainer">
+                  <img class="healtie-text-icon" loading="eager" alt="" />
+                </div>
+                <b class="healtie2">Healtie</b>
+              </div>
+            </div>
+            <div class="shape4"></div>
+            <div class="frame-nutrition">
+              <div class="shape5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="frame-sat-january">
+        <div class="sat-6-january">Sat, 6 January 2024</div>
+        <h1 class="breakfast">Breakfast</h1>
+        <div class="calories-frameg-calories">
+          <div class="calories-frameg-calories">
+            <div class="frame-lunch-dinner-calories">
+              <div class="sat-6-january">163</div>
+              <div class="calories1">Calories</div>
+            </div>
+            <div class="textg-fat">
+              <div class="sat-6-january">10g</div>
+              <div class="frameg-grams">
+                <div class="sat-6-january">Sugar</div>
+              </div>
+            </div>
+          </div>
+          <div class="textg-natrium">
+            <div class="sat-6-january">25g</div>
+            <div class="fat1">Fat</div>
+          </div>
+          <div class="textg-fat">
+            <div class="text-natrium">
+              <div class="sat-6-january">2g</div>
+            </div>
+            <div class="frameg-grams">
+              <div class="sat-6-january">Natrium</div>
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-container">
+          <div class="rectangle-div"></div>
+          <img
+            class="top-bar-container"
+            loading="eager"
+            alt=""
+            src="./public/rectangle-367@2x.png"
+          />
+
+          <div class="frame-lunch-dinner-calories">
+            <div class="nasi-ayam-teriyaki">Nasi Ayam Teriyaki</div>
+            <div class="kcal-wrapper">
+              <div class="kcal1">350 kcal</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lunch-dinner-container-parent">
+        <div class="lunch-dinner-container">
+          <h1 class="lunch">Lunch</h1>
+          <div class="frame-group">
+            <div class="frame-container">
+              <div class="calories-frameg-calories">
+                <div class="frame-lunch-dinner-calories">
+                  <div class="sat-6-january">450</div>
+                  <div class="calories2">Calories</div>
+                </div>
+                <div class="textg-fat">
+                  <div class="kcal1">10g</div>
+                  <div class="frameg-grams">
+                    <div class="sat-6-january">Sugar</div>
+                  </div>
+                </div>
+              </div>
+              <div class="textg-natrium">
+                <div class="sat-6-january">25g</div>
+                <div class="fat2">Fat</div>
+              </div>
+              <div class="textg-fat">
+                <div class="text-natrium">
+                  <div class="sat-6-january">2g</div>
+                </div>
+                <div class="frameg-grams">
+                  <div class="kcal1">Natrium</div>
+                </div>
+              </div>
+            </div>
+            <div class="group-div">
+              <div class="rectangle-div"></div>
+              <img
+                class="top-bar-container"
+                loading="eager"
+                alt=""
+                src="./public/rectangle-369@2x.png"
+              />
+
+              <div class="frame-lunch-dinner-calories">
+                <div class="nasi-ayam-teriyaki">Kwetiau Goreng Siram</div>
+                <div class="kcal-wrapper">
+                  <div class="kcal1">450 kcal</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lunch-dinner-container">
+          <h1 class="lunch">Dinner</h1>
+          <div class="frame-group">
+            <div class="frame-container">
+              <div class="frame-parent4">
+                <div class="parent">
+                  <div class="div">350</div>
+                  <div class="calories3">Calories</div>
+                </div>
+                <div class="textg-fat">
+                  <div class="kcal1">20g</div>
+                  <div class="frameg-grams">
+                    <div class="sat-6-january">Sugar</div>
+                  </div>
+                </div>
+              </div>
+              <div class="textg-natrium">
+                <div class="sat-6-january">28g</div>
+                <div class="fat3">Fat</div>
+              </div>
+              <div class="g-container">
+                <div class="g8">1g</div>
+                <div class="calories3">Natrium</div>
+              </div>
+            </div>
+            <div class="rectangle-parent1">
+              <div class="rectangle-div"></div>
+              <img
+                class="top-bar-container"
+                loading="eager"
+                alt=""
+                src="./public/rectangle-371@2x.png"
+              />
+
+              <div class="frame-lunch-dinner-calories">
+                <div class="nasi-ayam-teriyaki">Ayam Goreng</div>
+                <div class="kcal-wrapper">
+                  <div class="kcal1">350 kcal</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var frameFrameContainer = document.getElementById("frameFrameContainer");
+      if (frameFrameContainer) {
+        frameFrameContainer.addEventListener("click", function (e) {
+          window.location.href = "./HomePage.html";
+        });
+      }
+
+      var topNavBar = document.getElementById("topNavBar");
+      if (topNavBar) {
+        topNavBar.addEventListener("click", function (e) {
+          window.location.href = "./HomePage.html";
+        });
+      }
+    </script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

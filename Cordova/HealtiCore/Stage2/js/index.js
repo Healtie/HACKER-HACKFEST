@@ -21,28 +21,9 @@
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
 document.addEventListener('deviceready', onDeviceReady, false);
 
-function pingGoogle() {
-    fetch('https://lgarin211.github.io/draka/coplin.json')
-        .then(response => {
-            if (response.ok) {
-                return response.json();
-            }
-            throw new Error('Request failed.');
-        })
-        .then(data => {
-            console.log(data);
-            // Lakukan sesuatu dengan data yang diterima
-        })
-        .catch(error => {
-            console.log(error);
-        });
-
-}
-
-
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
-    pingGoogle();
+
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
 }

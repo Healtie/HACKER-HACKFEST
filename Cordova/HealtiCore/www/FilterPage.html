@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./FilterPage.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap" />
+</head>
+
+<body>
+  <div class="filter-page">
+    <main class="weight-height-age-frame">
+      <div class="weight-height-age-frame-child"></div>
+      <section class="top-nav-bar-parent">
+        <header class="top-nav-bar3" id="topNavBar">
+          <div class="shape23">
+            <div class="profile-frame">
+              <div class="button-back-parent">
+                <img class="button-back" loading="eager" alt="" src="./public/button--back.svg" />
+
+                <div class="health-profile">Health Profile</div>
+              </div>
+            </div>
+            <div class="shape24"></div>
+            <div class="shape25"></div>
+          </div>
+        </header>
+        <div class="weight-height-age-frame1">
+          <div class="weight-height-age-group">
+            <div class="weight1">Weight</div>
+            <div class="weight1">Height</div>
+            <div class="weight1">Age</div>
+          </div>
+          <div class="chairs-lamps-cabinets-parent">
+            <div class="chairs-lamps-cabinets">
+              <input class="form-control chairs-lamps-cabinets-child" type="number">
+              <div class="weight1">KG</div>
+            </div>
+            <div class="chairs-lamps-cabinets">
+              <input class="form-control chairs-lamps-cabinets-child" type="number">
+              <div class="yo" placeholder="cm" type="text">CM</div>
+            </div>
+            <div class="chairs-lamps-cabinets">
+              <input class="form-control chairs-lamps-cabinets-child" type="number">
+              <div class="yo">Tahun</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="goals-text">
+        <div class="goals">Goals</div>
+        <div class="categories">
+          <div class="light-exercise-dayweek-group-wrapper">
+            <div class="lamps-parent row" id="optionpot">
+              <button class="btn btn-outline-primary" style="margin-left:0.6rem;">
+                Balanced Diet
+              </button>
+              <button class="btn btn-outline-primary" style="margin-left:0.6rem;">
+                Weight Loss
+              </button>
+              <button class="btn btn-outline-primary" style="margin-left:0.6rem;">
+                Weight Gain
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="apply-filters-frame">
+        <div class="home-indicator3">
+          <div class="activity-level"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <label for="formGroupExampleInput" class="form-label"
+                  style="font-family: Poppins; font-weight: 600; font-size: 16px; color: #000000;">
+                  Activity Level
+                </label>
+                <select class="form-select col-12" aria-label="Default select example">
+                  <option selected>Light Exercise 1-3 days/week</option>
+                  <option value="1">Moderate Exercise 3-5 days/week</option>
+                  <option value="2">Heavy Exercise 6-7 days/week</option>
+                  <option value="3">Very Heavy Exercise 2x/day</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="formGroupExampleInput" class="form-label"
+                  style="font-family: Poppins; font-weight: 600; font-size: 16px; color: #000000;">
+                  Mental Health
+                </label>
+                <select class="form-select col-12" aria-label="Default select example">
+                  <option selected>Normal</option>
+                  <option value="1">Depression</option>
+                  <option value="2">Anxiety</option>
+                  <option value="3">Stress</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="apply-filters-parent">
+        <div class="apply-filters">
+          <div class="apply-filters-child"></div>
+          <button class="button-apply-filters" id="buttonApplyFilters">
+            <div class="button-apply-filters-child"></div>
+            <div class="continue" id="patnext">Continue</div>
+          </button>
+        </div>
+        <footer class="home-indicator4">
+          <div class="shape26"></div>
+          <div class="indicator2"></div>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    var topNavBar = document.getElementById("topNavBar");
+    if (topNavBar) {
+      topNavBar.addEventListener("click", function (e) {
+        window.location.href = "./HomePage.html";
+      });
+    }
+
+    var buttonApplyFilters = document.getElementById("buttonApplyFilters");
+    if (buttonApplyFilters) {
+      buttonApplyFilters.addEventListener("click", function (e) {
+        rekapSemuaData();
+        window.location.href = "./HomePage.html";
+      });
+    }
+  </script>
+
+  <script>
+    function rekapSemuaData() {
+      var tag = {};
+
+      // Rekap data pengguna
+      var inputPengguna = document.getElementsByTagName("input");
+      for (var i = 0; i < inputPengguna.length; i++) {
+        if (inputPengguna[i].value) {
+          tag[inputPengguna[i].id] = inputPengguna[i].value;
+        }
+      }
+      localStorage.setItem("UserdataInfo", JSON.stringify(tag));
+
+      // Rekap target
+      var button = document.querySelectorAll("#optionpot .active");
+      tag = {};
+      for (var j = 0; j < button.length; j++) {
+        tag[button[j].id] = button[j].innerHTML;
+      }
+      localStorage.setItem("UserdataTarget", JSON.stringify(tag));
+
+      // Rekap aktivitas
+      var inputAktivitas = document.getElementsByTagName("select");
+      for (var k = 0; k < inputAktivitas.length; k++) {
+        if (inputAktivitas[k].value) {
+          tag[inputAktivitas[k].id] = inputAktivitas[k].value;
+        }
+      }
+      localStorage.setItem("UserdataAktivitas", JSON.stringify(tag));
+    }
+
+
+    // tambahkan event listener pada semua tag button yang ada di dalam div dengan id optionpot
+    var button = document.querySelectorAll("#optionpot button");
+    for (var i = 0; i < button.length; i++) {
+      button[i].addEventListener("click", function (e) {
+        // jika button yang di klik toggle class active
+        this.classList.toggle("active");
+      });
+    }
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="./Personal.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap" />
+</head>
+
+<body>
+  <!-- buatkan aku modal untuk menyampaikan pesan error -->
+  <div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="modal-title" class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div id="modal-body" class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="closeModal" class="btn btn-secondary" data-bs-dismiss="modal">oke</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showModal(title, body) {
+      var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+      document.getElementById("modal-title").innerHTML = title;
+      document.getElementById("modal-body").innerHTML = body;
+      myModal.show();
+    }
+
+    var closeModal = document.getElementById("closeModal");
+    if (closeModal) {
+      closeModal.addEventListener("click", function (e) {
+        var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+        myModal.hide();
+      });
+    }
+  </script>
+  <!-- end of secment modal -->
+  <div class="personal">
+    <section class="frame-parent8">
+      <div class="shape-parent">
+        <header class="shape27">
+          <div class="shape-inner3">
+            <div class="button-app-setting-parent">
+              <img class="button-app-setting1" loading="eager" alt="" src="./public/button--app-setting.svg"
+                id="buttonAppSetting" />
+
+              <h3 class="healtie8" id="healtie">Healtie</h3>
+            </div>
+          </div>
+          <div class="shape28"></div>
+          <div class="shape29"></div>
+        </header>
+        <div class="rectangle-parent4">
+          <div class="frame-child20"></div>
+          <img class="avatar-2-icon" loading="eager" alt="" src="./public/avatar-2@2x.png" />
+
+          <div class="frame-parent9">
+            <div class="ferren-andrea-parent">
+              <div class="ferren-andrea1">Ferren Andrea</div>
+              <img class="pen-1-icon1" loading="eager" alt="" src="./public/pen-12.svg" id="pen1Icon" />
+            </div>
+            <div class="ferren14gmailcom">089625259980</div>
+            <div class="ferren14gmailcom">ferren14@gmail.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-parent5">
+        <div class="frame-child21"></div>
+        <div class="featured-items2" id="featuredItemsContainer">
+          <div class="edit">Health Profile</div>
+          <div class="edit-parent">
+            <div class="edit">Edit</div>
+            <img class="icon4" loading="eager" alt="" src="./public/icon3.svg" />
+          </div>
+        </div>
+        <div class="frame-wrapper3">
+          <div class="frame-parent10">
+            <div class="rectangle-parent6">
+              <div class="frame-child22"></div>
+              <div class="calorie-needs">Calorie Needs</div>
+            </div>
+            <div class="rectangle-parent7">
+              <div class="frame-child23"></div>
+              <div class="calorie-needs">Age</div>
+            </div>
+            <div class="rectangle-parent8">
+              <div class="frame-child24"></div>
+              <div class="calorie-needs">Activity Level</div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-wrapper4">
+          <div class="frame-parent11">
+            <div class="rectangle-parent9">
+              <div class="frame-child25"></div>
+              <div class="calorie-needs">Body Composition</div>
+            </div>
+            <div class="rectangle-parent10">
+              <div class="frame-child26"></div>
+              <div class="calorie-needs">Height</div>
+            </div>
+            <div class="rectangle-parent11">
+              <div class="frame-child27"></div>
+              <div class="calorie-needs">Weight</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bottom-nav-bar1">
+      <div class="shape-group">
+        <img class="shape-icon3" alt="" />
+
+        <img class="account-icon1" loading="eager" alt="" src="./public/account2@2x.png" />
+
+        <img class="notification-icon2" loading="eager" alt="" src="./public/notification2@2x.png"
+          id="notificationIcon" />
+
+        <img class="cart-icon1" alt="" src="./public/cart.svg" id="cart" />
+
+        <img class="favorite-icon1" loading="eager" alt="" src="./public/favorite@2x.png" id="favoriteIcon" />
+
+        <img class="home-icon" alt="" src="./public/home@2x.png" id="homeImage" />
+
+        <div class="icon5">
+          <img class="upc-scan-1-icon1" loading="eager" alt="" src="./public/upcscan-1.svg" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    var buttonAppSetting = document.getElementById("buttonAppSetting");
+    if (buttonAppSetting) {
+      buttonAppSetting.addEventListener("click", function (e) {
+        window.location.href = "./ProfilSetting.html";
+      });
+    }
+
+    var healtie = document.getElementById("healtie");
+    if (healtie) {
+      healtie.addEventListener("click", function (e) {
+        window.location.href = "./HomePage.html";
+      });
+    }
+
+    var pen1Icon = document.getElementById("pen1Icon");
+    if (pen1Icon) {
+      pen1Icon.addEventListener("click", function (e) {
+        window.location.href = "./AccountSettings.html";
+      });
+    }
+
+    var featuredItemsContainer = document.getElementById(
+      "featuredItemsContainer",
+    );
+    if (featuredItemsContainer) {
+      featuredItemsContainer.addEventListener("click", function (e) {
+        window.location.href = "./FilterPage.html";
+      });
+    }
+
+    var notificationIcon = document.getElementById("notificationIcon");
+    if (notificationIcon) {
+      notificationIcon.addEventListener("click", function (e) {
+        window.location.href = "./Notifications.html";
+      });
+    }
+
+    var cart = document.getElementById("cart");
+    if (cart) {
+      cart.addEventListener("click", function (e) {
+        window.location.href = "./NutritionCheckScanBarcode.html";
+      });
+    }
+
+    var favoriteIcon = document.getElementById("favoriteIcon");
+    if (favoriteIcon) {
+      favoriteIcon.addEventListener("click", function (e) {
+        // Please sync "News" to the project
+      });
+    }
+
+    var homeImage = document.getElementById("homeImage");
+    if (homeImage) {
+      homeImage.addEventListener("click", function (e) {
+        window.location.href = "./HomePage.html";
+      });
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
